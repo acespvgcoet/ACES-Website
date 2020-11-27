@@ -1,1 +1,37 @@
-/* all variables, colors, fonts goes here  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  /* colors */
+
+  --blueText: #27466f;
+  --darkBlueText: #272343;
+  --greyText: #929aab;
+  --whiteText: #f8f8f9;
+  --lightGreyBg: #fafafa;
+  --darkGreyBg: #bbbfca;
+
+  /* font-weights */
+
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --bold: 700;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+}
