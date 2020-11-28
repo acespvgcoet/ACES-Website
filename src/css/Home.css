@@ -1,1 +1,8 @@
-/* styles for home page */
+.home-main {
+  box-sizing: border-box;
+  background: url(../assets/images/cubes-bg.png);
+}
+
+.about-us-main h1 {
+  font-size: 40px;
+}
