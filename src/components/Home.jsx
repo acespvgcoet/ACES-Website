@@ -2,6 +2,8 @@ import React from "react";
 import "../css/globalStyles.css";
 import "../css/Home.css";
 
+import Header from "./Header";
+
 import ACES from "../assets/images/aces.png";
 import Shuttle from "../assets/icons/shuttle.png";
 import Lightbulb from "../assets/icons/lightbulb.png";
@@ -13,6 +15,7 @@ function Home() {
   return (
     <div>
       <section className="home-main">
+        <Header />
         <div className="home-main-content">
           <h1>Welcome to ACES</h1>
           <p>
