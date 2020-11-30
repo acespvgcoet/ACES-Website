@@ -1,0 +1,4 @@
+.teamMembers {
+    display: grid;
+    place-items: center;
+}
