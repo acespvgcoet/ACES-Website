@@ -13,21 +13,28 @@ import Globe from "../assets/images/globe.svg";
 
 function Home() {
   return (
-    <div>
+    <div className="home">
       <section className="home-main">
         <Header />
-        <div className="home-main-content">
-          <h1>Welcome to ACES</h1>
-          <p>
-            Our mission is to work with passion towards the intellectual and
-            cognitive growth of students, inculcating an environment of
-            innovation, creativity, instilling the values of sharing, hard work,
-            loyalty and respect towards knowledge and the society and evolve to
-            be engaged community leaders.
-          </p>
-        </div>
-        <div className="ACES-logo">
-          <img src={ACES} alt="ACES-logo" />
+        <div className="top-container">
+          <div className="home-main-content">
+            <h1>Welcome to ACES</h1>
+            <p>
+              Our mission is to work with passion towards the intellectual and
+              cognitive growth of students, inculcating an environment of
+              innovation, creativity, instilling the values of sharing, hard
+              work, loyalty and respect towards knowledge and the society and
+              evolve to be engaged community leaders.
+            </p>
+          </div>
+          <div className="ACES-logo">
+            <img src={ACES} alt="ACES-logo" />
+            <p>
+              <strong>A</strong>ssociation of <strong>C</strong>omputer
+              <br />
+              <strong>E</strong>ngineering <strong>S</strong>tudents
+            </p>
+          </div>
         </div>
       </section>
       <section className="about-us-container">
@@ -104,7 +111,6 @@ function Home() {
       <section className="vision-container">
         <div className="vision-content">
           <h2 className="custom-underline">&nbsp;Our Vision</h2>
-          
           <p>
             “To work with passion towards the intellectual and cognitive growth
             of students, inculcating an environment of innovation, creativity,
