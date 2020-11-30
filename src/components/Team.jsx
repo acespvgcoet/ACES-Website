@@ -3,6 +3,7 @@ import InfoBlock from './InfoBlock'
 import '../css/Team.css'
 import TeamBlock from './TeamBlock'
 import db from './firebase';
+import Header from './Header';
 function Team() {
   const [teams,setTeams] = useState([]);
   const [teachers,setTeachers] = useState([]);
@@ -28,8 +29,9 @@ function Team() {
     })
   },[teams,teachers,leads])
   return (
-    <div className = "team">
-      
+    <div>
+      <Header/>
+      <div className = "team">
       <div className="teamCoordinators">
         {teachers.map(teacher => (
           <InfoBlock name = {teacher.data.name} designation = {teacher.data.designation}/>
@@ -58,6 +60,7 @@ function Team() {
       <TeamBlock name = "Editorial"/> */}
       </div>
       
+    </div>
     </div>
   )
 }
