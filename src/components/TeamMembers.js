@@ -17,13 +17,13 @@ function TeamMembers() {
            }
        })
        console.log(name)
-       db.collection("teams").doc(teamName)?.collection("members").where("category","==","Head").orderBy("name","asc").onSnapshot((snapshot) => {
+       db.collection("teams").doc(teamName)?.collection("members").where("category","==","Head").onSnapshot((snapshot) => {
             setTeamHeads(snapshot.docs.map((doc) => ({
                 id: doc.id,
                 data: doc.data()
             })))
        })
-       db.collection("teams").doc(teamName)?.collection("members").where("category","==","Member").orderBy("name","asc").onSnapshot((snapshot) => {
+       db.collection("teams").doc(teamName)?.collection("members").where("category","==","Member").onSnapshot((snapshot) => {
         setTeamMembers(snapshot.docs.map((doc) => ({
             id: doc.id,
             data: doc.data()
