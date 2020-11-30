@@ -103,7 +103,8 @@ function Home() {
       </section>
       <section className="vision-container">
         <div className="vision-content">
-          <h2>Our Vision</h2>
+          <h2 className="custom-underline">&nbsp;Our Vision</h2>
+          
           <p>
             “To work with passion towards the intellectual and cognitive growth
             of students, inculcating an environment of innovation, creativity,

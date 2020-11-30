@@ -1,18 +1,1 @@
 /* styles for team page */
-.team {
-    display: grid;
-    place-items: center;
-}
-
-.teamCoordinators {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.teamNames {
-   
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
