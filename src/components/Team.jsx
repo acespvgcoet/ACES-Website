@@ -6,9 +6,32 @@ import TeamBlock from './TeamBlock'
 import db from './firebase';
 import Header from './Header';
 
-import React from 'react'
+
 
 function Team() {
+  const [teams,setTeams] = useState([]);
+  const [teachers,setTeachers] = useState([]);
+  const [leads,setLeads] = useState([]);
+  useEffect(()=>{
+    db.collection("teams").onSnapshot((snapshot) => {
+      setTeams(snapshot.docs.map((doc)=>({
+        id: doc.id,
+        data: doc.data(),
+      })))
+    })
+    db.collection("heads").where("category","==","teacher").onSnapshot((snapshot) => {
+      setTeachers(snapshot.docs.map((doc)=>({
+        id: doc.id,
+        data: doc.data()
+      })))
+    })
+    db.collection("heads").where("category","==","student").onSnapshot((snapshot) => {
+      setLeads(snapshot.docs.map((doc)=>({
+        id: doc.id,
+        data: doc.data()
+      })))
+    })
+  },[teams,teachers,leads])
   return (
     <div>
 
