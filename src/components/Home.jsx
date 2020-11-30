@@ -2,6 +2,8 @@ import React from "react";
 import "../css/globalStyles.css";
 import "../css/Home.css";
 
+import Header from "./Header";
+
 import ACES from "../assets/images/aces.png";
 import Shuttle from "../assets/icons/shuttle.png";
 import Lightbulb from "../assets/icons/lightbulb.png";
@@ -13,6 +15,7 @@ function Home() {
   return (
     <div>
       <section className="home-main">
+        <Header />
         <div className="home-main-content">
           <h1>Welcome to ACES</h1>
           <p>
@@ -100,7 +103,8 @@ function Home() {
       </section>
       <section className="vision-container">
         <div className="vision-content">
-          <h2>Our Vision</h2>
+          <h2 className="custom-underline">&nbsp;Our Vision</h2>
+          
           <p>
             “To work with passion towards the intellectual and cognitive growth
             of students, inculcating an environment of innovation, creativity,

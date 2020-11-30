@@ -1,26 +1,23 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import '../css/Header.css'
+import React from "react";
+import { NavLink } from "react-router-dom";
+import "../css/Header.css";
 function Header() {
   return (
-
     <div className="header">
-      <Link className = "headerLink" to = "/">
+      <NavLink className="headerLink" exact={true} to="/">
         <p>HOME</p>
-      </Link>
-      <Link className = "headerLink" to = "/teams">
+      </NavLink>
+      <NavLink className="headerLink" to="/teams">
         <p>TEAM</p>
-      </Link>
-      
-        <p>SUBMIT IDEA</p>
-      
-      <Link className = "headerLink" to = "/contact">
-        <p>CONTACT</p>
-      </Link>
-      
-    </div>
+      </NavLink>
 
-  )
+      <p>SUBMIT IDEA</p>
+
+      <NavLink className="headerLink" to="/contact">
+        <p>CONTACT</p>
+      </NavLink>
+    </div>
+  );
 }
 
-export default Header
+export default Header;
