@@ -6,3 +6,22 @@
 .about-us-main h1 {
   font-size: 40px;
 }
+.decription h2{
+  font-size:40px;
+}
+.description p{
+  color:#989594;
+}
+.description button{
+  border: 2px solid #e7e7e7;
+  background-color:white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius:5px;
+}
+.description button:hover{
+  background: #e7e7e7;;
+}
+
