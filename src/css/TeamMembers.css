@@ -1,0 +1,45 @@
+.teamMembersHeader{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+}
+
+.teamName {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 75px;
+
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+
+    color: #27466F;
+    margin-left: 60px;
+
+
+}
+.teamLogo {
+    width: 350px !important;
+    height: 350px !important;
+    margin-right: 60px;
+}
+.teamMembers {
+    display: grid;
+    place-items: center;
+}
+.teamMembersHeads {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teamMembersMembers {
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: center;
+}

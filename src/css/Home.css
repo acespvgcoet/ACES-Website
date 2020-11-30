@@ -1,11 +1,63 @@
+.home {
+  font-family: "Roboto", sans-serif;
+}
+
 .home-main {
   box-sizing: border-box;
   background: url(../assets/images/cubes-bg.png);
+  height: 100%;
+  padding-bottom: 200px;
+}
+
+.top-container {
+  margin: 30px 80px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.home-main-content {
+  width: 90%;
+  height: auto;
+  color: var(--blueText);
+}
+
+.home-main-content h1 {
+  font-size: 3.125rem;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+
+.home-main-content p {
+  font-size: 21px;
+  line-height: 1.5;
+  width: 75%;
+}
+
+.ACES-logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.ACES-logo > p {
+  font-size: 20px;
+  text-align: center;
+  font-weight: var(--regular);
+  letter-spacing: 1.5px;
+}
+
+.ACES-logo img {
+  width: 75%;
+  height: auto;
 }
 
 .about-us-main h1 {
   font-size: 40px;
 }
+
 .bottom-container
 {
 position: absolute;
@@ -130,4 +182,71 @@ border-radius: 11px;
 }	
 	
 	
+
+
+
+.vision-content p {
+  position: absolute;
+  width: 934px;
+  height: 205px;
+  left: 253px;
+  top: 3252px;
+
+  font-family: Roboto;
+  font-style: Medium;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 40px;
+  /* or 167% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+
+  color: #272343;
+}
+
+.vision-content h2 {
+  position: absolute;
+  width: 282px;
+  height: 80px;
+  left: 599px;
+  top: 3130px;
+
+  font-family: Roboto;
+  font-style: Bold;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 65px;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.05em;
+
+  color: #272343;
+}
+.custom-underline {
+  background-image: linear-gradient(#959695, #949694);
+  background-position: bottom center; /*Adjust the background-position to move the line*/
+  background-size: 60% 5px; /*Adjust the background size to control length and height*/
+  background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+  .top-container {
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .home-main-content {
+    width: 100%;
+    text-align: center;
+    line-height: normal;
+  }
+  .home-main-content p {
+    line-height: 1.5;
+    width: 100%;
+  }
+}
 
