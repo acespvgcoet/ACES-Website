@@ -1,9 +1,14 @@
 import React from 'react'
+import "../css/globalStyles.css";
+import "../css/Contact.css";
+
+import Header from "./Header";
 
 function Contact() {
   return (
-    <div>
-      This is contact page
+    <div className="contact">
+      <Header />
+      <p>This is contact page</p>
     </div>
   )
 }
