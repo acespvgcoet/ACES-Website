@@ -158,7 +158,7 @@
   border: 2px solid #929aab;
 }
 
-.description-2-content h1::after {
+.description-1-content h2::after {
   width: 65%;
 }
 
@@ -205,38 +205,28 @@
   width: 600px;
 }
 
-.vision-content p {
-  font-family: Roboto;
-  font-style: Medium;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 40px;
-
-  display: flex;
-  align-items: center;
+.vision-container {
   text-align: center;
-  letter-spacing: 0.05em;
-
-  color: #272343;
+  color: var(--blueText);
+  margin: 5rem;
+  background-color: #ffffff;
 }
 
 .vision-content h2 {
-  font-family: Roboto;
-  font-style: Bold;
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 65px;
-  display: flex;
-  align-items: center;
-  letter-spacing: 0.05em;
-
-  color: #272343;
+  font-size: 40px;
 }
-.custom-underline {
-  background-image: linear-gradient(#959695, #949694);
-  background-position: bottom center; /*Adjust the background-position to move the line*/
-  background-size: 60% 5px; /*Adjust the background size to control length and height*/
-  background-repeat: no-repeat;
+
+.vision-container h2::after {
+  content: "";
+  display: block;
+  border: 2px solid #929aab;
+  width: 10%;
+  margin-left: 45%;
+}
+
+.vision-container p {
+  font-size: 21px;
+  line-height: 1.5;
 }
 
 @media screen and (max-width: 992px) {
