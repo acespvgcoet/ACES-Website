@@ -9,13 +9,13 @@
     box-shadow: 0px 1px 15px 4px rgba(0, 0, 0, 0.25);
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     place-items: center;
     margin-bottom: 30px;
     
 }
 .infoBlockAvatarContainer {
-    flex: 60%;
+    flex: 50%;
 }
 .infoBlockAvatar {
     cursor: pointer;
@@ -26,7 +26,7 @@
     
 }
 .infoBlock>.details > b {
-    flex: 20%;
+    
     margin: 0 !important;
     font-family: Roboto;
     font-style: normal;
@@ -39,7 +39,7 @@
     color: var(--darkBlueText)
 }
 .infoBlock>.details > p {
-    flex: 20%;
+   
     margin: 0 !important;
     font-family: Roboto;
     font-style: normal;
@@ -54,6 +54,7 @@
 
 }
 .details {
+    flex: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
