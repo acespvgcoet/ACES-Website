@@ -7,7 +7,7 @@
 .teamName {
     font-family: Roboto;
     font-style: normal;
-    font-weight: bold;
+    font-weight: var(--bold);
     font-size: 64px;
     line-height: 75px;
 
@@ -17,7 +17,7 @@
     text-align: center;
     letter-spacing: 0.05em;
 
-    color: #27466F;
+    color: var(--blueText);
     margin-left: 60px;
 
 
