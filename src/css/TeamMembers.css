@@ -43,3 +43,20 @@
     
     justify-content: center;
 }
+
+@media(max-width:800px) {
+    .teamMembersHeader {
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+
+    }
+    .teamName{
+        align-self: center;
+        margin: 0 ;
+    }
+    .teamLogo {
+        align-self: center;
+        margin: 0;
+    }
+}
