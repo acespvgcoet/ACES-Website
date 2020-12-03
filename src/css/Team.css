@@ -17,3 +17,68 @@
     justify-content: center;
     flex-wrap: wrap;
 }
+
+.teamheader {
+	display: flex;
+	justify-content: center !important;
+	margin: 30px;
+}
+.teampagelogo {
+	flex: 1;
+
+	
+	width: 40vw;
+	object-fit: contain;
+}
+.teampagetitle {
+	flex: 1;
+	margin-left: 20px;
+}
+.teampagetitle > h1{
+	font-family: Roboto;
+font-style: normal;
+font-weight: var(--bold);
+font-size: 64px;
+line-height: 75px;
+
+/* identical to box height */
+/* display: flex;
+align-items: center;
+text-align: center; */
+letter-spacing: 0.05em;
+
+color: var(--blueText);
+
+
+}
+.teampagetitle p {
+	font-family: Roboto;
+font-style: normal;
+font-weight: var(--medium);
+font-size: 36px;
+line-height: 42px;
+
+align-items: center;
+letter-spacing: 0.05em;
+
+color:var(--blueText);
+}
+
+@media(max-width:768px){
+	.teamheader {
+		align-self: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center !important;
+	}
+	.teampagelogo  {
+		align-self: center;
+	}
+	.teampagetitle {
+		align-self: center !important;
+	}
+	.teampagetitle p,h1 {
+		text-align: center !important;
+
+	}
+}

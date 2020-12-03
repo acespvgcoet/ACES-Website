@@ -18,3 +18,13 @@
     color: var(--blueText);
     
 }
+
+@media(max-width:768px)
+{
+    .header {
+        display: flex;
+        justify-content: center;
+        font-size: x-large;
+        
+    }
+}
