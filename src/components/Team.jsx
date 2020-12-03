@@ -5,6 +5,7 @@ import '../css/Team.css'
 import TeamBlock from './TeamBlock'
 import db from './firebase';
 import Header from './Header';
+import teamimage from '../assets/images/team.png';
 
 
 
@@ -37,6 +38,19 @@ function Team() {
 
       <Header/>
       <div className = "team">
+      <div className="teamheader">
+          <div className="teampagetitle">
+              <div className="title">
+                <p>The Team</p>
+                <h3>Get  to  Know  our  2020-21  Team</h3>
+              </div>
+          </div>
+          <div className="teampagelogo">
+                <img className="logo" src={teamimage} alt="teamlogo" />
+
+          </div>
+      </div>
+      <h1>Team</h1>
       <div className="teamCoordinators">
         {teachers.map(teacher => (
           <InfoBlock name = {teacher.data.name} designation = {teacher.data.designation}/>

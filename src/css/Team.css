@@ -1,8 +1,90 @@
 /* styles for team page */
 /* styles for team page */
+
 .team {
+	float: right;
     display: grid;
     place-items: center;
+}
+
+.team h1
+{
+	text-decoration: underline;
+}
+
+.teamheader{
+	width: 100%;
+	display: flex;
+	margin-bottom: 300px;
+	
+}
+.teampagetitle
+{
+	width: 50%;
+	
+}
+.teampagetitle p
+{
+	font-size: 50px;
+	color: #27466F;
+	font-weight: bolder;
+	margin:0 0;
+
+}
+.teampagetitle h3
+{
+	color: #27466F;
+	margin:0 0;
+	font-size: 30px;
+	font-weight: 500;
+}
+.title
+{
+	margin: 160px 0 0 200px;
+}
+
+.teampagelogo{
+	width: 50%;	
+}
+.logo{
+	margin: 30px 0 0 170px;
+	width: 540px;
+	height: 400px;
+}
+
+@media only screen and (max-width: 900px) 
+{
+	.teamheader{
+	
+	margin-bottom: 200px;
+	
+}
+
+	.teampagetitle
+{
+	width: 40%;
+	
+}
+ 	.teampagetitle p
+{
+	font-size: 30px;
+
+}
+.teampagetitle h3
+{
+	
+	font-size: 15px;
+	
+}
+.title
+{
+	margin: 150px 0 0 80px;
+}
+.logo{
+	margin: 30px 0 0 40px;
+	width: 430px;
+	height: 300px;
+}
 }
 
 .teamCoordinators {
