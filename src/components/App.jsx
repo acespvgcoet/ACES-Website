@@ -14,10 +14,9 @@ function App() {
     <div className="app">
       <Router>
         <Switch>
-
-          <Route path = "/teams/:teamName">
-            <Header/>
-            <TeamMembers/>
+          <Route path="/teams/:teamName">
+            <Header />
+            <TeamMembers />
           </Route>
 
           <Route path="/teams">
@@ -30,7 +29,7 @@ function App() {
             <Home />
           </Route>
         </Switch>
-        {/* <Footer/> */}
+        <Footer />
       </Router>
     </div>
   );

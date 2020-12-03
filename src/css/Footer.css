@@ -1,1 +1,74 @@
-/* styles for footer */
+.footer {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--darkGreyBg);
+  margin-bottom: 0;
+  color: var(--whiteText);
+}
+
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.footer-main {
+  margin: 0 5rem 0;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 19px;
+  font-weight: var(--light);
+}
+
+.site-links > ul > li {
+  text-decoration: inherit;
+  margin-bottom: 5px;
+}
+
+.site-links > ul > li:hover {
+  color: var(--blueText);
+  transition: 0.2s ease-in-out;
+}
+
+.social-media-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.social-media-links > ul > li {
+  margin-bottom: 5px;
+}
+
+.social-media-icon {
+  max-width: 40px;
+}
+
+.footer-brand {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.footer-brand p {
+  margin-top: 5px;
+}
+
+.footer-brand > img {
+  width: 200px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer-main {
+    flex-direction: column;
+  }
+  .social-media-container,
+  .site-links {
+    margin-left: 30%;
+  }
+}
