@@ -86,7 +86,7 @@ function Footer() {
         <div className="footer-brand">
           <img src={ACES} alt="ACES-logo" />
           <p>
-            &copy; 2020
+            &copy; {new Date().getFullYear()}
             <br />
             <strong>Association of Computer Engineering Students</strong>
             <br />
