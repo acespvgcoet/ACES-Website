@@ -1,0 +1,16 @@
+.appmiddle {
+  width: 100%;
+  height: 200px;
+  justify-content: space-evenly;
+}
+.appmiddlecontent {
+  align-items: center;
+  margin-left: 100px;
+}
+
+@media (max-width: 800px) {
+  .appmiddlecontent {
+    align-items: center;
+    margin-left: 20px;
+  }
+}
