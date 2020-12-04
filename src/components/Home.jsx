@@ -40,33 +40,39 @@ function Home() {
       <section className="about-us-container">
         <div className="about-us-main">
           <h1>About Us</h1>
-          <p>We are group of Computer Engineering students from PVGCOET.</p>
+          <p>
+            ACES focuses on leveling up the competency levels for their
+            undergraduates by providing them a platform to recognize their skill
+            set deep insights about computational systems and related
+            disciplines so that they can build their brand in the highly
+            competitive field of Computer Engineering.
+          </p>
         </div>
         <div className="features">
           <div className="features-row">
             <div className="feature-card">
               <img src={Shuttle} alt="shuttle-icon" />
-              <h3>Smol headline</h3>
+              <h3>Invest</h3>
               <p>
-                We provide technical as well as non – technical grooming to the
-                students by organizing various workshops and activities,
-                catalyzing growth.
+                We provide technical as well as non technical support to the
+                students by organising different workshops, events & Hackathons
               </p>
             </div>
             <div className="feature-card">
               <img src={Lightbulb} alt="lightbulb-icon" />
-              <h3>Smol headline</h3>
+              <h3>Initiate</h3>
               <p>
-                We provide a platform for students to showcase their talents and
-                skills in various domains and all perceivable fields.
+                We hone the talents at the right time and help them grow by
+                providing them a platform to showcase their skills in different
+                domains
               </p>
             </div>
             <div className="feature-card">
               <img src={Group} alt="group-icon" />
-              <h3>Smol headline</h3>
+              <h3>Influence</h3>
               <p>
                 We encourage students to learn, share and inculcate the values
-                of team work, leadership, management and soft skills.
+                of team work, leadership qualities, management and soft skills
               </p>
             </div>
           </div>
@@ -78,11 +84,11 @@ function Home() {
             <div className="description-1-content">
               <h2>What do we do?</h2>
               <p>
-                We at ACES look forward to the welfare of our students by
-                conducting ambitious events and workshops. We take good care of
-                their needs and supply them with the right knowledge at the
-                right time. Our committee aims at making each event exciting and
-                encourage the concept of 'fun and learn'.
+                ACES looks forward to the welfare of its students by conducting
+                ambitious conferences and workshops. Events are held to broaden
+                the skill set of our students and assist them in their domain.
+                At ACES, we encourage participation in academics as well as
+                extra-curricular activities.
               </p>
               <button>Learn More</button>
             </div>
@@ -94,11 +100,11 @@ function Home() {
             <div className="description-2-content">
               <h2>Opportunities we provide</h2>
               <p>
-                At ACES we promote participation and exploration of
-                self-interests. Each event aims at the expansion of the skill
-                sets of the participants. We provide the platform to showcase
-                your talent. With our faculty and committee, we strive to
-                provide an ocean of opportunities for you to dive in.
+                ACES promotes participation and exploration of self-interests.
+                Each event aims at the expansion of the skill sets of the
+                students. We provide them with a platform to showcase their
+                talent. With our faculty and committee, we strive to provide an
+                ocean of opportunities for them to dive in.
               </p>
               <button>Submit Idea</button>
             </div>

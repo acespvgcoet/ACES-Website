@@ -13,7 +13,7 @@ function Footer() {
   return (
     <div className="footer">
       <div className="footer-main">
-        <div className="site-links">
+        {/* <div className="site-links">
           <h3 style={{ fontSize: "24px" }}>More from ACES</h3>
           <ul>
             <li>
@@ -22,7 +22,7 @@ function Footer() {
               </NavLink>
             </li>
             <li>
-              <a /*href=""*/>Submit Idea</a>
+              <a href="">Submit Idea</a>
             </li>
             <li>
               <NavLink to="/teams">Team</NavLink>
@@ -31,7 +31,7 @@ function Footer() {
               <NavLink to="/contact">Contact Us</NavLink>
             </li>
           </ul>
-        </div>
+        </div> */}
         <div className="social-media-container">
           <h3 style={{ fontSize: "24px" }}>Get Connected</h3>
           <div className="social-media-links">
