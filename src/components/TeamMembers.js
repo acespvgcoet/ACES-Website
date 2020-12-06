@@ -39,14 +39,18 @@ function TeamMembers() {
              <div className = "teamMembers">
             <div className = "teamMembersHeads">
                 {teamHeads.map(teamHead => (
-                    <InfoBlock name = {teamHead.data.name} designation = "Head"/>
+                    <InfoBlock name = {teamHead.data.name} designation = "Head" 
+                    imgLink ={teamHead.data?.imgLink}
+                    linkedInLink ={teamHead.data?.linedInLink}/>
                 ))}
                 
                 {/* <InfoBlock/> */}
             </div>
             <div className = "teamMembersMembers">
             {teamMembers.map(teamMember => (
-                    <InfoBlock name = {teamMember.data.name} designation = {teamMember.data.category}/>
+                    <InfoBlock name = {teamMember.data.name} designation = {teamMember.data.category}
+                    imgLink ={teamMember.data?.imgLink}
+                    linkedInLink ={teamMember.data?.linedInLink}/>
                 ))}
                 
             </div>

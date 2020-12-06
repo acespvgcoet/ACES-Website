@@ -4,7 +4,7 @@
     display: flex;
     justify-content: right;
     font-size: x-large;
-    
+    font-family: "Roboto", sans-serif;
 }
 .headerLink {
     text-decoration: none;
@@ -24,7 +24,7 @@
     .header {
         display: flex;
         justify-content: center;
-        font-size: x-large;
-        
+        font-size: 20px;
+        font-family: "Roboto", sans-serif;
     }
 }

@@ -10,7 +10,7 @@ function AppMiddle() {
       <div className="appmiddlecontent">
         <div style={{ display: "flex", alignItems: "center" }}>
           <MailIcon style={{ fontSize: 40, color: "orange" }}>Email</MailIcon>
-          <h3 style={{ marginLeft: 10 }}>XYZ@gmail.com</h3>
+          <h3 style={{ marginLeft: 10 }}>aces@pvgcoet.ac.in</h3>
         </div>
         <div style={{ display: "flex", alignItems: "center" }}>
           <PhoneIcon style={{ fontSize: 40, color: "green" }}></PhoneIcon>

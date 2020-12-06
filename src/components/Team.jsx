@@ -10,6 +10,10 @@ function Team() {
   const [teams, setTeams] = useState([]);
   const [teachers, setTeachers] = useState([]);
   const [leads, setLeads] = useState([]);
+  const [name,setName] = useState();
+  const [cat,setCat] = useState();
+  const [imgL,setImgL] = useState();
+  const [linkedInL,setLinkedInL] = useState();
   useEffect(() => {
     db.collection("teams").onSnapshot((snapshot) => {
       setTeams(
@@ -40,10 +44,37 @@ function Team() {
         );
       });
   }, [teams, teachers, leads]);
+  const send = (e) => {
+    e.preventDefault();
+    console.log(name,cat,imgL,linkedInL);
+    console.log("notification")
+        db.collection("teams").doc("notification").collection("members").add(
+            {
+                name: name,
+                category: cat,
+                imgLink: imgL,
+                linedInLink: linkedInL,
+            }
+        )
+        setName('');
+        setCat('');
+        setImgL('');
+        setLinkedInL('');
+        
+  }
   return (
     <div>
       <Header />
+      {/*
+      Uncomment this to add Member Data Data To firestore
+      
+      Name: <input type = "text" value={name} onChange={e => setName(e.target.value)}/><br/>
+        Category: <input type = "text" value={cat} onChange={e => setCat(e.target.value)}/><br/>
+        IMGLink: <input type = "text" value={imgL} onChange={e => setImgL(e.target.value)}/><br/>
+        LinkedLink : <input type = "text" value={linkedInL} onChange={e => setLinkedInL(e.target.value)}/><br/>
+        <button onClick  = {send}>Send</button><br/>*/}
       <div className="teamheader">
+       
           <div className="teampagetitle">
             
               <h1>The Team</h1>
@@ -62,6 +93,8 @@ function Team() {
             <InfoBlock
               name={teacher.data.name}
               designation={teacher.data.designation}
+              imgLink ={teacher.data?.imgLink}
+              linkedInLink ={teacher.data?.linkedInLink}
             />
           ))}
 
@@ -72,6 +105,8 @@ function Team() {
             <InfoBlock
               name={lead.data.name}
               designation={lead.data.designation}
+              imgLink ={lead.data?.imgLink}
+              linkedInLink ={lead.data?.linkedInLink}
             />
           ))}
         </div>
