@@ -38,3 +38,14 @@
 .teamBlockLink {
     text-decoration: none;
 }
+
+@media(max-width:500px){
+    .teamBlockArea {
+    
+    
+        min-width: 310px;
+        min-height: 310px;
+        max-width: 310px;
+        max-height: 310px;
+    }
+}

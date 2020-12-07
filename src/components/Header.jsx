@@ -5,16 +5,18 @@ function Header() {
   return (
     <div className="header">
       <NavLink className="headerLink" exact={true} to="/">
-        <p>HOME</p>
+        <p className = "headerNav">HOME</p>
       </NavLink>
       <NavLink className="headerLink" to="/teams">
-        <p>TEAM</p>
+        <p className = "headerNav">TEAM</p>
       </NavLink>
-
-      <p>SUBMIT IDEA</p>
+      <a className="headerLink" >
+        <p className = "headerNav">SUBMIT IDEA</p>
+      </a>
+      
 
       <NavLink className="headerLink" to="/contact">
-        <p>CONTACT</p>
+        <p className = "headerNav">CONTACT</p>
       </NavLink>
     </div>
   );

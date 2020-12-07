@@ -6,14 +6,17 @@
     font-size: x-large;
     font-family: "Roboto", sans-serif;
 }
-.headerLink {
+.headerLink > p {
+    flex: 1;
     text-decoration: none;
-}
-.header p {
-   
-    /*  margin: 10px; */
     margin-left: 25px;
     margin-right: 25px;
+}
+.headerNav{
+   
+     /* margin: 10px;
+     */
+    flex: 1;
     cursor: pointer;
     color: var(--blueText);
     
@@ -23,8 +26,14 @@
 {
     .header {
         display: flex;
-        justify-content: center;
+        justify-content: space-evenly;
         font-size: 20px;
         font-family: "Roboto", sans-serif;
+    }
+    .headerLink > p {
+        flex: 1;
+        text-decoration: none;
+        margin-left: 0;
+        margin-right: 0;
     }
 }
