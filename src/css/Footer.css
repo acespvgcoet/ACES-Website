@@ -48,6 +48,13 @@ ul {
 
 .social-media-icon {
   max-width: 40px;
+  filter: grayscale(90%);
+  opacity:0.2;
+}
+.social-media-icon:hover{
+  transform: scale(1.2);
+  filter:none;
+  opacity:1;
 }
 
 .footer-brand {
