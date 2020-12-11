@@ -4,12 +4,14 @@ import { NavLink } from "react-router-dom";
 import "../css/globalStyles.css";
 import "../css/Footer.css";
 
-import Instagram from "../assets/icons/instagram.svg";
-import Facebook from "../assets/icons/facebook.svg";
-import LinkedIn from "../assets/icons/linkedin.svg";
+import Instagram from "../assets/icons/instagramcolor.svg";
+import Facebook from "../assets/icons/facebookcolor.svg";
+import LinkedIn from "../assets/icons/linkedincolor.svg";
 import ACES from "../assets/images/aces.png";
+import YouTube from "../assets/icons/youtubecolor.svg";
 
 function Footer() {
+
   return (
     <div className="footer">
       <div className="footer-main">
@@ -59,6 +61,21 @@ function Footer() {
                     className="social-media-icon"
                     src={Facebook}
                     alt="facebook-icon"
+                 
+             
+                  />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.youtube.com/channel/UCCJMlulQSD1k8DO1gIVyKhw"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <img
+                    className="social-media-icon"
+                    src={YouTube}
+                    alt="youtube-icon"
                   />
                 </a>
               </li>
@@ -79,6 +96,7 @@ function Footer() {
             <ul>
               <li style={{ paddingTop: "5px" }}>Follow Us</li>
               <li style={{ paddingTop: "25px" }}>Like Us</li>
+              <li style={{ paddingTop: "25px" }}>Subscribe Us</li>
               <li style={{ paddingTop: "25px" }}>Follow Us</li>
             </ul>
           </div>
