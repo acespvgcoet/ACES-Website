@@ -25,42 +25,32 @@
 }
 .teampagelogo {
 	flex: 1;
-
-	
-	width: 40vw;
+	width: 35vw;
+	height: 26vw;
 	object-fit: contain;
 }
 .teampagetitle {
 	flex: 1;
-	margin-left: 20px;
+	margin-left: 50px;
+	margin-top: 120px;
 }
-.teampagetitle > h1{
-	font-family: Roboto;
+.teampagetitle  h1{
+margin: 0;
+font-family: Roboto;
 font-style: normal;
 font-weight: var(--bold);
-font-size: 64px;
-line-height: 75px;
-
-/* identical to box height */
-/* display: flex;
-align-items: center;
-text-align: center; */
-letter-spacing: 0.05em;
-
+font-size: 3.125rem;
+letter-spacing: 0.04em;
 color: var(--blueText);
-
-
 }
 .teampagetitle p {
-	font-family: Roboto;
+margin: 0;
+font-family: Roboto;
 font-style: normal;
 font-weight: var(--medium);
-font-size: 36px;
-line-height: 42px;
-
+font-size: 30px;
 align-items: center;
-letter-spacing: 0.05em;
-
+letter-spacing: 0.04em;
 color:var(--blueText);
 }
 

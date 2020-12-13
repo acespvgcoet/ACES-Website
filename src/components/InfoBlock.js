@@ -8,9 +8,10 @@ function InfoBlock({name,designation,imgLink,linkedInLink}) {
     const [image,setImage] = useState();
     
     return (
+        <a href = {linkedInLink}>
         <div className = "infoBlock">
             <div className = "infoBlockAvatarContainer">
-                <a href = {linkedInLink}><Avatar id = "avatar" src = {imgLink} className = "infoBlockAvatar"/></a>
+                <Avatar id = "avatar" src = {imgLink} className = "infoBlockAvatar"/>
                
             </div>
             
@@ -20,6 +21,7 @@ function InfoBlock({name,designation,imgLink,linkedInLink}) {
             </div>
             
         </div>
+        </a>
     )
 }
 

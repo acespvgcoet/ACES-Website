@@ -79,12 +79,12 @@ function Team() {
             
               <h1>The Team</h1>
               <p>Get to Know our 2020-21 Team</p>
-            </div>
+          </div>
           
           
             <img className= "teampagelogo" src={teamimage} alt="teamlogo" />
           
-        </div>
+      </div>
       <div className="team">
         
         <h1>Team</h1>

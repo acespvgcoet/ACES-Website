@@ -4,12 +4,10 @@
 .teamBlockArea {
     
     
-    min-width: 400px;
-    min-height: 400px;
-    max-width: 400px;
-    max-height: 400px;
-
-
+    min-width: 320px;
+    min-height: 320px;
+    max-width: 320px;
+    max-height: 320px;
     background: #FFFFFF;
     box-shadow: 0px 1px 15px 4px rgba(0, 0, 0, 0.25);
     display: grid;
@@ -25,14 +23,10 @@
     font-family: Roboto;
     font-style: normal;
     font-weight: var(--bold);
-    font-size: 48px;
+    font-size: 30px;
     line-height: 50px;
-
-
     text-align: center;
-
     letter-spacing: 0.05em;
-
     color: var(--darkBlueText)
 }
 .teamBlockLink {
@@ -42,10 +36,9 @@
 @media(max-width:500px){
     .teamBlockArea {
     
-    
-        min-width: 310px;
-        min-height: 310px;
-        max-width: 310px;
-        max-height: 310px;
+        min-width: 250px;
+        min-height: 250px;
+        max-width: 250px;
+        max-height: 250px;
     }
 }

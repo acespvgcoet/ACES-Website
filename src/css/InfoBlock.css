@@ -1,8 +1,8 @@
 .infoBlock {
     flex: 1;
-    min-width: 270px;
+    min-width: 260px;
     min-height: 250px;
-    max-width: 270px;
+    max-width: 260px;
     max-height: 250px;
     margin: 30px;
     background: #FFFFFF;
@@ -11,9 +11,9 @@
     flex-direction: column;
     justify-content: space-evenly;
     place-items: center;
-    margin-bottom: 30px;
-    
+    margin-bottom: 30px;    
 }
+
 .infoBlockAvatarContainer {
     flex: 50%;
 }
