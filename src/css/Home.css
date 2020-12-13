@@ -23,9 +23,13 @@
   color: var(--blueText);
 }
 
+.home-main-content img {
+  width: 100px;
+}
+
 .home-main-content h1 {
   font-size: 3.125rem;
-  margin-bottom: 0;
+  margin: 0;
   letter-spacing: 1px;
 }
 
@@ -256,11 +260,19 @@
     line-height: 1.5;
     width: 100%;
   }
+  .about-us-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
   .features-row {
     flex-direction: column;
   }
   .feature-card {
     width: 82%;
+  }
+  .bottom-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
   .description-1 {
     flex-direction: column;
@@ -284,5 +296,9 @@
   }
   .globe-img img {
     width: 100%;
+  }
+  .vision-container {
+    margin-left: 2rem;
+    margin-right: 2rem;
   }
 }

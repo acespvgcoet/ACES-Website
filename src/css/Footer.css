@@ -49,12 +49,12 @@ ul {
 .social-media-icon {
   max-width: 40px;
   filter: grayscale(90%);
-  opacity:0.2;
+  opacity: 0.2;
 }
-.social-media-icon:hover{
+.social-media-icon:hover {
   transform: scale(1.2);
-  filter:none;
-  opacity:1;
+  filter: none;
+  opacity: 1;
 }
 
 .footer-brand {
@@ -73,9 +73,11 @@ ul {
 @media screen and (max-width: 768px) {
   .footer-main {
     flex-direction: column;
+    margin: 0 2rem 0;
   }
-  .social-media-container,
-  .site-links {
-    margin-left: 30%;
+  .social-media-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

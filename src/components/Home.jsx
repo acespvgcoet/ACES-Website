@@ -10,6 +10,7 @@ import Lightbulb from "../assets/icons/lightbulb.png";
 import Group from "../assets/icons/group.png";
 import Blocks from "../assets/images/blocks.png";
 import Globe from "../assets/images/globe.svg";
+import PVG from "../assets/images/pvg-logo.jpg";
 
 function Home() {
   return (
@@ -18,6 +19,7 @@ function Home() {
         <Header />
         <div className="top-container">
           <div className="home-main-content">
+            <img src={PVG} alt="PVG-logo" />
             <h1>Welcome to ACES</h1>
             <p>
               Our mission is to work with passion towards the intellectual and
