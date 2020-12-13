@@ -20,8 +20,10 @@
 
 .teamheader {
 	display: flex;
+	
 	justify-content: center !important;
 	margin: 30px;
+	margin-top: 10px !important;
 }
 .teampagelogo {
 	flex: 1;
@@ -32,7 +34,8 @@
 .teampagetitle {
 	flex: 1;
 	margin-left: 50px;
-	margin-top: 120px;
+	/* margin-top: 120px; */
+	align-self: center !important;
 }
 .teampagetitle  h1{
 margin: 0;

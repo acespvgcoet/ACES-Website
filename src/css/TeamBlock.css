@@ -1,6 +1,10 @@
 .teamBlock {
     margin: 30px;
 }
+.teamBlockArea:hover
+{
+    background-color:  #f3eded;
+}
 .teamBlockArea {
     
     
