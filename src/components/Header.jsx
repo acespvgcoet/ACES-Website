@@ -4,6 +4,8 @@ import "../css/Header.css";
 function Header() {
   return (
     <div className="header">
+      <label for="hamburger">&#9776;</label>
+  <input type="checkbox" id="hamburger"/>
       <NavLink className="headerLink" exact={true} to="/">
         <p className = "headerNav">HOME</p>
       </NavLink>
