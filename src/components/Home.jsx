@@ -30,6 +30,8 @@ function Home() {
           <div className="ACES-logo">
             <img src={ACES} alt="ACES-logo" />
             <p>
+              PVGCOET's
+              <br />
               <strong>A</strong>ssociation of <strong>C</strong>omputer
               <br />
               <strong>E</strong>ngineering <strong>S</strong>tudents
@@ -90,7 +92,13 @@ function Home() {
                 At ACES, we encourage participation in academics as well as
                 extra-curricular activities.
               </p>
-              <button>Learn More</button>
+              <form
+                action="https://www.youtube.com/channel/UCCJMlulQSD1k8DO1gIVyKhw"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button type="submit">Learn More</button>
+              </form>
             </div>
             <div className="blocks-img">
               <img src={Blocks} alt="blocks-img" />
@@ -106,7 +114,13 @@ function Home() {
                 talent. With our faculty and committee, we strive to provide an
                 ocean of opportunities for them to dive in.
               </p>
-              <button>Submit Idea</button>
+              <form
+                action="https://tinyurl.com/y6gtcoje"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <button type="submit">Submit Idea</button>
+              </form>
             </div>
             <div className="globe-img">
               <img src={Globe} alt="globe-img" />
@@ -118,11 +132,10 @@ function Home() {
         <div className="vision-content">
           <h2 className="custom-underline">&nbsp;Our Vision</h2>
           <p>
-            “To work with passion towards the intellectual and cognitive growth
-            of students, inculcating an environment of innovation, creativity,
-            instilling the values of sharing, hard work, loyalty and respect
-            towards knowledge and the society and evolve to be engaged community
-            leaders.”
+            “To promote a vibrant culture of social, educational and cultural
+            interaction, continuously building a technical ecosystem in which
+            students enrich their practical knowledge and extol the department
+            throughout the university.”
           </p>
         </div>
       </section>

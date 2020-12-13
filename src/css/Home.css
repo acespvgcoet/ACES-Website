@@ -176,8 +176,8 @@
   line-height: 1.4;
 }
 
-.description-1-content button,
-.description-2-content button {
+.description-1-content form button,
+.description-2-content form button {
   background-color: var(--lightGreyBg);
   border: 2px solid;
   border-color: var(--darkBlueText);
