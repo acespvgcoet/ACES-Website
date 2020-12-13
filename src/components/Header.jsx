@@ -12,7 +12,7 @@ function Header() {
       <NavLink className="headerLink" to="/teams">
         <p className = "headerNav">TEAM</p>
       </NavLink>
-      <a className="headerLink" >
+      <a className="headerLink" href = "https://tinyurl.com/y6gtcoje" target = "_blank">
         <p className = "headerNav">SUBMIT IDEA</p>
       </a>
       
