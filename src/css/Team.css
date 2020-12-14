@@ -22,8 +22,8 @@
 	display: flex;
 	
 	justify-content: center !important;
-	margin: 30px;
-	margin-top: 10px !important;
+	/* margin: 30px;
+	margin-top: 10px !important; */
 }
 .teampagelogo {
 	flex: 1;
@@ -45,6 +45,7 @@ font-weight: var(--bold);
 font-size: 3.125rem;
 letter-spacing: 0.04em;
 color: var(--blueText);
+text-align: center;
 }
 .teampagetitle p {
 margin: 0;
@@ -55,6 +56,8 @@ font-size: 30px;
 align-items: center;
 letter-spacing: 0.04em;
 color:var(--blueText);
+
+text-align: center;
 }
 
 @media(max-width:768px){
@@ -66,6 +69,7 @@ color:var(--blueText);
 	}
 	.teampagelogo  {
 		align-self: center;
+
 	}
 	.teampagetitle {
 		align-self: center !important;
