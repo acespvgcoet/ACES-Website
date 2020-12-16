@@ -100,6 +100,7 @@
 }
 
 .feature-card {
+  align-self: center;
   width: 25%;
   height: auto;
   margin: 0 1rem 2rem;
@@ -269,6 +270,7 @@
   }
   .feature-card {
     width: 82%;
+    align-self: center;
   }
   .bottom-container {
     padding-left: 2rem;
