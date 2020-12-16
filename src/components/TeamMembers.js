@@ -4,6 +4,7 @@ import '../css/TeamMembers.css';
 import { useParams } from 'react-router-dom';
 import db from './firebase';
 import { Avatar } from '@material-ui/core';
+import teamimage from "../assets/images/community.png";
 function TeamMembers() {
     const {teamName} = useParams();
     const [teamHeads,setTeamHeads] = useState([]);
@@ -34,7 +35,7 @@ function TeamMembers() {
         <div>
             <div className = "teamMembersHeader">
              <div className= "teamName">{name}</div>
-                <Avatar className = "teamLogo"/>
+                <Avatar src={teamimage} className = "teamLogo"/>
             </div>
              <div className = "teamMembers">
             <div className = "teamMembersHeads">

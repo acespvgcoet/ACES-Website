@@ -19,7 +19,7 @@ function Home() {
         <Header />
         <div className="top-container">
           <div className="home-main-content">
-            <img src={PVG} alt="PVG-logo" />
+            <a href = "https://www.pvgcoet.ac.in/" target  = "_blank"><img src={PVG} alt="PVG-logo" /></a>
             <h1>Welcome to ACES</h1>
             <p>
               Our mission is to work with passion towards the intellectual and

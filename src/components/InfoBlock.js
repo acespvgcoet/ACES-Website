@@ -8,7 +8,7 @@ function InfoBlock({name,designation,imgLink,linkedInLink}) {
     
     return (
         <div className = "infoBlockCover">
-            <a href = {linkedInLink}>
+            <a href = {linkedInLink} target = "_blank" >
             <div className = "infoBlock">
                 <div className = "infoBlockAvatarContainer">
                     <Avatar id = "avatar" src = {imgLink} className = "infoBlockAvatar"/>
