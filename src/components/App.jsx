@@ -8,6 +8,8 @@ import Team from "./Team";
 
 import TeamMembers from "./TeamMembers";
 import Header from "./Header";
+import EventsPage from "./EventsPage";
+import Blogs from "./Blogs";
 
 function App() {
   return (
@@ -24,6 +26,14 @@ function App() {
           </Route>
           <Route path="/contact">
             <Contact />
+          </Route>
+          <Route path="/events">
+            <Header />
+            <EventsPage />
+          </Route>
+          <Route path="/blogs">
+            <Header />
+            <Blogs />
           </Route>
           <Route path="/">
             <Home />
