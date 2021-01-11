@@ -1,0 +1,42 @@
+.blogs_up {
+  justify-content: center;
+  height: 440px;
+  display: flex;
+  align-items: center;
+}
+
+.blogs_down {
+  margin-top: 20px;
+  justify-content: center;
+  display: flex;
+  margin-bottom: 30px;
+  align-items: center;
+}
+
+.blogcardsmall {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 85vw;
+  justify-content: center;
+}
+
+.blog_cards {
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+@media only screen and (max-width: 800px) {
+  .blogs_up {
+    height: 670px;
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 740px) {
+  .blogs_up {
+    height: 550px;
+    display: flex;
+  }
+}
