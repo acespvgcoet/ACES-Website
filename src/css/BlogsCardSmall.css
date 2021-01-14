@@ -1,9 +1,14 @@
 .blogscardsmall {
-  width: 275px;
+  width: 320px;
   height: 420px;
   background: rgb(255, 255, 255);
-  margin-bottom: 20px;
-  box-shadow: 1px 1px 2px 1px rgb(114, 113, 113);
+  margin:10px 20px 10px 20px;
+  box-shadow: 0px 1px 15px 4px rgba(0, 0, 0, 0.25);
+}
+.blogscardsmall:hover{
+  cursor: pointer;
+  background-color: #f3eded;
+  transform:scale(1.01);
 }
 
 .blog_info h1 {
@@ -27,6 +32,7 @@
 .blog_image {
   height: 180px;
 }
+
 
 .blog_image img {
   height: 180px;
