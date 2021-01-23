@@ -1,0 +1,106 @@
+.card{
+    position: absolute;
+    align-content: center;
+    text-align: center;/*
+    display: flexbox;*/
+    left:350px;
+    margin: 0;
+    }
+    
+    
+    .card{
+
+        margin-left: 120px;
+        justify-content: left;
+        display: flex;
+        margin-bottom: 500%;
+        align-items: center;
+    
+    }
+    
+    
+    
+    .card_title{
+    top:10%;
+    margin:0;
+    width: 400px;
+    height: 44px;
+    margin-bottom: 10px;
+    background: #000000;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 29px;
+    text-align: center;
+    padding-top: 10px;
+    color: #FFFFFF
+    }
+    .card_photo{
+    margin-top:20%;
+    width: 800px;
+    height: 189px;
+    background-image: url("../../src/assets/images/Android.png");
+    }
+    .card_content{
+    margin-top:50%;
+    width: 800px;
+    height: 434px;
+    background: #ECFAFF;
+    text-align: center;
+    }
+    .card_content_title{
+        width: 462px;
+    height: 51px;
+    top: 13px;
+    margin: 0;
+    font-family: Rhodium Libre;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 51px;
+    color: #FF0000;
+    
+    }
+    .card_content_des{
+        width: 577px;
+    height: 338px;/*
+    margin-left:52px ;
+    margin-right: 39px;*/
+    margin: 0;
+    font-family: Rhodium Libre;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: left;
+    color: #000000;
+    
+    }
+    .card_link{
+        
+        width: 800px;
+    height: 121px;
+    margin: 0;
+    background: #ECF9FD;
+    }
+    .link_title{
+    font-family: Rhodium Libre;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 41px;
+    text-align: center;
+    color: #000000;
+    }
+    
+    .link{
+        font-family: Rhodium Libre;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 26px;
+    color: #000000;
+    }
+    
+    

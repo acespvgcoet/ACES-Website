@@ -1,0 +1,36 @@
+
+.Events-container #timeline{
+    content: "";
+    width: 70px;
+    background: #000E32;;
+    left: 47%;
+    top: 30%;
+    position: relative;
+    height: 1660px;
+    border: 1px solid transparent;
+    border-radius: 75px;
+}
+.Events-container h2{
+
+    position: relative;
+    width: 528px;
+    height: 72px;
+    left: 35%;
+    top: 10%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    color: #263362;
+}
+
+
+@media only screen and (max-width: 500px) {
+    .Events-container h2{
+        left: 5%;
+    }
+    .Events-container #timeline{
+        left: 15%;
+    }
+  }
