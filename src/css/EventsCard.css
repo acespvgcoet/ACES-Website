@@ -119,17 +119,17 @@ border-radius: 100px;
     border-radius: 100px;
     }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 700px) {
     .card2{
         margin-left: 120px;;
     }
     
    .card-image{
-    margin-left: -50px;
+    margin-left: -30px;
     }
     
     .card-image2{
-        margin-left: -50px;
+        margin-left: -30px;
         }
     
   }
