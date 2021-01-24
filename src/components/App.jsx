@@ -8,7 +8,7 @@ import Team from "./Team";
 
 import TeamMembers from "./TeamMembers";
 import Header from "./Header";
-import EventsPage from "./EventsPage";
+import Events from "./Events";
 import Blogs from "./Blogs";
 
 function App() {
@@ -29,7 +29,7 @@ function App() {
           </Route>
           <Route path="/events">
             <Header />
-            <EventsPage />
+            <Events />
           </Route>
           <Route path="/blogs">
             <Header />

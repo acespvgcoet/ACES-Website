@@ -1,0 +1,65 @@
+
+.Events-container #timeline{
+    content: "";
+    width: 70px;
+    background: #000E32;;
+    left: 47%;
+    top: 30%;
+    position: relative;
+    height: 100%;
+    border: 1px solid transparent;
+    border-radius: 75px;
+}
+.Events-container h2{
+
+    position: relative;
+    width: 528px;
+    height: 72px;
+    left: 35%;
+    top: 10%;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 56px;
+    color: #263362;
+}
+
+
+@media(max-width: 768px) {
+    .Events-container h2{
+        left: 5%;
+    }
+    .Events-container #timeline{
+        left: 15%;
+    }
+  }
+
+  @media(max-width:560px) {
+    .Events-container h2{
+        left: 5%;
+        width:350px;
+    }
+    .Events-container #timeline{
+        left: 10%;
+        width:40px;
+    }
+  }
+
+
+
+  @media(max-width:400px){
+    .Events-container h2{
+        
+        left:20%;
+        display:block;
+        height:200px;
+        width:100px;
+    }
+    .Events-container #timeline{
+        top:0px;
+        left: 40%;
+        width:40px;
+       
+    }
+  }
