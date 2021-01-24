@@ -26,11 +26,40 @@
 }
 
 
-@media only screen and (max-width: 700px) {
+@media(max-width: 768px) {
     .Events-container h2{
         left: 5%;
     }
     .Events-container #timeline{
         left: 15%;
+    }
+  }
+
+  @media(max-width:560px) {
+    .Events-container h2{
+        left: 5%;
+        width:350px;
+    }
+    .Events-container #timeline{
+        left: 10%;
+        width:40px;
+    }
+  }
+
+
+
+  @media(max-width:400px){
+    .Events-container h2{
+        
+        left:20%;
+        display:block;
+        height:200px;
+        width:100px;
+    }
+    .Events-container #timeline{
+        top:0px;
+        left: 40%;
+        width:40px;
+       
     }
   }
