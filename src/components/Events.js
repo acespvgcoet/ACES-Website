@@ -1,14 +1,12 @@
-import React from "react";
-// import EventDetails from "./EventDetails";
-import EventsPage from "./EventsPage";
+import React from 'react'
+import EventsPage from './EventsPage'
 
 function Events() {
   return (
- <div>
- <EventsPage></EventsPage>
- {/* <EventDetails></EventDetails> */}
- </div>
-  );
+    <div>
+       <EventsPage />
+    </div>
+  )
 }
 
-export default Events;
+export default Events
