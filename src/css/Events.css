@@ -1,65 +1,76 @@
-
-.Events-container #timeline{
-    content: "";
-    width: 70px;
-    background: #000E32;;
-    left: 47%;
-    top: 30%;
-    position: relative;
-    height: 100%;
-    border: 1px solid transparent;
-    border-radius: 75px;
-}
-.Events-container h2{
-
-    position: relative;
-    width: 528px;
-    height: 72px;
-    left: 35%;
-    top: 10%;
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 48px;
-    line-height: 56px;
-    color: #263362;
+.Events-container {
+  font-family: "Roboto", sans-serif;
 }
 
+.events-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 1.5rem 4rem;
+}
 
-@media(max-width: 768px) {
-    .Events-container h2{
-        left: 5%;
-    }
-    .Events-container #timeline{
-        left: 15%;
-    }
+.events-header > div > h1 {
+  font-size: 3.125rem;
+  color: var(--blueText);
+  margin-bottom: 0;
+}
+
+.events-header > div > p {
+  font-size: 1.4rem;
+  color: var(--blueText);
+}
+
+.events-header > div > img {
+  width: 85%;
+}
+
+.Events-container #timeline {
+  content: "";
+  width: 70px;
+  background: #000e32;
+  left: 47%;
+  top: 30%;
+  position: relative;
+  height: 100%;
+  border: 1px solid transparent;
+  border-radius: 75px;
+}
+
+@media screen and (max-width: 768px) {
+  .events-header {
+    flex-direction: column;
+    text-align: center;
   }
-
-  @media(max-width:560px) {
-    .Events-container h2{
-        left: 5%;
-        width:350px;
-    }
-    .Events-container #timeline{
-        left: 10%;
-        width:40px;
-    }
+  .Events-container h2 {
+    left: 5%;
   }
-
-
-
-  @media(max-width:400px){
-    .Events-container h2{
-        
-        left:20%;
-        display:block;
-        height:200px;
-        width:100px;
-    }
-    .Events-container #timeline{
-        top:0px;
-        left: 40%;
-        width:40px;
-       
-    }
+  .Events-container #timeline {
+    left: 15%;
   }
+}
+
+@media (max-width: 560px) {
+  .Events-container h2 {
+    left: 5%;
+    width: 350px;
+  }
+  .Events-container #timeline {
+    left: 10%;
+    width: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .Events-container h2 {
+    left: 20%;
+    display: block;
+    height: 200px;
+    width: 100px;
+  }
+  .Events-container #timeline {
+    top: 0px;
+    left: 40%;
+    width: 40px;
+  }
+}

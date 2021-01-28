@@ -1,3 +1,28 @@
+.blogs {
+  font-family: "Roboto", sans-serif;
+}
+
+.blogs-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 10px 10px;
+}
+
+.blogs-header > div > h1 {
+  color: var(--blueText);
+  font-size: 4rem;
+  letter-spacing: 3px;
+  margin-bottom: 0;
+}
+
+.blogs-header > div > p {
+  color: var(--blueText);
+  font-size: 1.4rem;
+  letter-spacing: 2px;
+}
+
 .blogs_up {
   justify-content: center;
   height: 440px;
@@ -25,6 +50,12 @@
 .blog_cards {
   margin-right: 20px;
   margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .blogs-header {
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 800px) {

@@ -2,9 +2,24 @@ import React from "react";
 import "../css/Blogs.css";
 import BlogsCardLarge from "./BlogsCardLarge";
 import BlogsCardSmall from "./BlogsCardSmall";
+import BlogIllustration from "../assets/images/blog-illustration.png";
+
 function Blogs() {
   return (
     <div className="blogs">
+      <section className="blogs-header">
+        <div>
+          <h1>Blogs</h1>
+          <p>Read. Learn. Grow.</p>
+        </div>
+        <div style={{ textAlign: "center" }}>
+          <img
+            style={{ width: "80%" }}
+            src={BlogIllustration}
+            alt="blog-illustration"
+          />
+        </div>
+      </section>
       <div className="blogs_up">
         <div className="blogcardlarge">
           <BlogsCardLarge
