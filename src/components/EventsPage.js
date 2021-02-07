@@ -18,7 +18,10 @@ function EventsPage() {
           <img src={EventIllustartion} alt="events-illustartion" />
         </div>
       </section>
-      <div className="timeline-container">
+      <div
+        className="timeline-container"
+        style={{ backgroundColor: "#e9edf0" }}
+      >
         <div id="timeline">
           <div className="card-image">
             <a

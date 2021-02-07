@@ -13,9 +13,7 @@ function Contact() {
       <Header />
       <ContactUsupperpart></ContactUsupperpart>
       <ContactUsMiddle></ContactUsMiddle>
-      <br></br>
       <Map1></Map1>
-      <br></br>
     </div>
   );
 }

@@ -10,10 +10,10 @@ function Team() {
   const [teams, setTeams] = useState([]);
   const [teachers, setTeachers] = useState([]);
   const [leads, setLeads] = useState([]);
-  const [name,setName] = useState();
-  const [cat,setCat] = useState();
-  const [imgL,setImgL] = useState();
-  const [linkedInL,setLinkedInL] = useState();
+  const [name, setName] = useState();
+  const [cat, setCat] = useState();
+  const [imgL, setImgL] = useState();
+  const [linkedInL, setLinkedInL] = useState();
   useEffect(() => {
     db.collection("teams").onSnapshot((snapshot) => {
       setTeams(
@@ -46,22 +46,19 @@ function Team() {
   }, [teams, teachers, leads]);
   const send = (e) => {
     e.preventDefault();
-    console.log(name,cat,imgL,linkedInL);
-    console.log("notification")
-        db.collection("teams").doc("notification").collection("members").add(
-            {
-                name: name,
-                category: cat,
-                imgLink: imgL,
-                linedInLink: linkedInL,
-            }
-        )
-        setName('');
-        setCat('');
-        setImgL('');
-        setLinkedInL('');
-        
-  }
+    console.log(name, cat, imgL, linkedInL);
+    console.log("notification");
+    db.collection("teams").doc("notification").collection("members").add({
+      name: name,
+      category: cat,
+      imgLink: imgL,
+      linedInLink: linkedInL,
+    });
+    setName("");
+    setCat("");
+    setImgL("");
+    setLinkedInL("");
+  };
   return (
     <div>
       <Header />
@@ -74,27 +71,22 @@ function Team() {
         LinkedLink : <input type = "text" value={linkedInL} onChange={e => setLinkedInL(e.target.value)}/><br/>
         <button onClick  = {send}>Send</button><br/>*/}
       <div className="teamheader">
-       
-          <div className="teampagetitle">
-            
-              <h1>The Team</h1>
-              <p>Get to Know our 2020-21 Team</p>
-          </div>
-          
-          
-            <img className= "teampagelogo" src={teamimage} alt="teamlogo" />
-          
+        <div className="teampagetitle">
+          <h1>The Team</h1>
+          <p>Get to Know our 2020-21 Team</p>
+        </div>
+
+        <img className="teampagelogo" src={teamimage} alt="teamlogo" />
       </div>
-      <div className="team">
-        
+      <div className="team" style={{ backgroundColor: "#e9edf0" }}>
         <h1>Team</h1>
         <div className="teamCoordinators">
           {teachers.map((teacher) => (
             <InfoBlock
               name={teacher.data.name}
               designation={teacher.data.designation}
-              imgLink ={teacher.data?.imgLink}
-              linkedInLink ={teacher.data?.linkedInLink}
+              imgLink={teacher.data?.imgLink}
+              linkedInLink={teacher.data?.linkedInLink}
             />
           ))}
 
@@ -105,8 +97,8 @@ function Team() {
             <InfoBlock
               name={lead.data.name}
               designation={lead.data.designation}
-              imgLink ={lead.data?.imgLink}
-              linkedInLink ={lead.data?.linkedInLink}
+              imgLink={lead.data?.imgLink}
+              linkedInLink={lead.data?.linkedInLink}
             />
           ))}
         </div>

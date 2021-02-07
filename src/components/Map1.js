@@ -14,7 +14,10 @@ export class Map1 extends Component {
       popupAnchor: [0, -41],
     });
     return (
-      <div className="map-container-main">
+      <div
+        className="map-container-main"
+        style={{ backgroundColor: "#e9edf0" }}
+      >
         <div className="map-container">
           <MapContainer
             center={position}

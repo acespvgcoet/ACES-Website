@@ -6,7 +6,7 @@ import "../css/ContactMiddle.css";
 
 function AppMiddle() {
   return (
-    <div className="appmiddle">
+    <div className="appmiddle" style={{ backgroundColor: "#e9edf0" }}>
       <div className="appmiddlecontent">
         <div style={{ display: "flex", alignItems: "center" }}>
           <MailIcon style={{ fontSize: 40, color: "orange" }}>Email</MailIcon>
@@ -21,10 +21,14 @@ function AppMiddle() {
           <LocationOnIcon
             style={{ fontSize: 40, color: "red" }}
           ></LocationOnIcon>
-          <h3 style={{ marginLeft: 10 }}> ACES | PVG’s College of Engineering and Technology<br></br>
-          44, Vidya Nagari, Shivdarshan, Parvati,Pune – 411009 Maharashtra – INDIA</h3>
+          <h3 style={{ marginLeft: 10 }}>
+            {" "}
+            ACES | PVG’s College of Engineering and Technology<br></br>
+            44, Vidya Nagari, Shivdarshan, Parvati,Pune – 411009 Maharashtra –
+            INDIA
+          </h3>
           <br></br>
-        </div> 
+        </div>
       </div>
       <div></div>
     </div>
