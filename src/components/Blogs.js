@@ -21,7 +21,7 @@ function Blogs() {
         </div>
       </section>
       <section style={{ backgroundColor: "#e9edf0" }}>
-        <div className="blogs_up">
+        {/* <div className="blogs_up">
           <div className="blogcardlarge">
             <BlogsCardLarge
               description='The use of the term "technology" has changed significantly over
@@ -32,7 +32,7 @@ function Blogs() {
               topic="Technology"
             ></BlogsCardLarge>
           </div>
-        </div>
+        </div> */}
         <div className="blogs_down">
           <div className="blogcardsmall">
             <div className="blog_cards">
