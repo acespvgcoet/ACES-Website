@@ -1,40 +1,27 @@
 import React from "react";
 import "../css/EventsCard.css";
-function EventsCard({ title, day, month, date, year, time }) {
+function EventsCard({ description,day,date, topic,conductedBy }) {
   return (
-    <div className="event-card">
-      <div class="card_title">
-        {/* ANDROID WORKSHOP */}
-        {title}
-        <div class="card_des">
-          <div class="date">
-            <div class="day">
-              <hr width="33%" align="center" size="2px" color="black" />
-              {day}
-              {/* FRI */}
-              <hr width="33%" align="center" size="2px" color="black" />
-            </div>
-            <div class="month">
-              {month},{date}
-              {/* OCT 22 */}
-            </div>
-            <div class="year">
-              <hr width="40%" align="center" size="2px" color="black" />
-              {year}
-              {/* 2020 */}
-              <hr width="40%" align="center" size="2px" color="black" />
-            </div>
+    <div className="Events_main">
+      <div className="Events_left">
+        <img src="https://images.wallpaperscraft.com/image/laptop_keyboard_glow_170138_300x168.jpg"></img>
+      </div>
+      <div className="Events_right">
+        <div className="Events_right_main">
+        <div className="Events_title">
+          <h3>{day },{date}</h3>
           </div>
-          <div class="time">
-            <div class="no">
-              {time}
-              {/* 7 */}
-            </div>
-            <div class="pm">pm Onwards</div>
+          <div className="Events_topic">
+            <h1>{topic}</h1>
           </div>
-          <div>
-            <button class="button">Learn More</button>
+        
+          <div className="Events_des">
+            <p>{description}</p>
           </div>
+        </div>
+        <div className="author">
+          <div className="author_img"></div>
+        <h3>{conductedBy}</h3>
         </div>
       </div>
     </div>

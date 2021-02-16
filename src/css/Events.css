@@ -1,11 +1,17 @@
-.timeline-container {
+/* .timeline-container {
   padding: 2rem 0;
-}
+} */
 
 .Events-container {
   font-family: "Roboto", sans-serif;
 }
-
+.eventsposition {
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
 .events-header {
   display: flex;
   flex-direction: row;
@@ -29,7 +35,8 @@
   width: 85%;
 }
 
-.Events-container #timeline {
+
+/* .Events-container #timeline {
   content: "";
   width: 70px;
   background: #000e32;
@@ -39,7 +46,7 @@
   height: 100%;
   border: 1px solid transparent;
   border-radius: 75px;
-}
+} */
 
 @media screen and (max-width: 768px) {
   .events-header {
