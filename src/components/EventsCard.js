@@ -5,7 +5,6 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 function EventsCard({
   description,
-  day,
   date,
   topic,
   conductedBy,
@@ -64,7 +63,7 @@ function EventsCard({
         <div className="Events_right_main">
           <div className="Events_title">
             <h3>
-              {day},{date}
+              {date}
             </h3>
           </div>
           <div className="Events_topic">
