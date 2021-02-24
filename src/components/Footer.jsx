@@ -38,7 +38,7 @@ function Footer() {
           <h3 style={{ fontSize: "24px" }}>Get Connected</h3>
           <div className="social-media-links">
             <ul style={{ marginRight: "10px" }}>
-              <li>
+              <li style={{ paddingTop: "5px" }}>
                 <a
                   href="https://www.instagram.com/acespvg/"
                   target="_blank"
@@ -51,7 +51,7 @@ function Footer() {
                   />
                 </a>
               </li>
-              <li>
+              <li style={{ paddingTop: "10px" }}>
                 <a
                   href="https://www.facebook.com/acespvgcoet"
                   target="_blank"
@@ -66,7 +66,7 @@ function Footer() {
                   />
                 </a>
               </li>
-              <li>
+              <li style={{ paddingTop: "10px" }}>
                 <a
                   href="https://www.youtube.com/channel/UCCJMlulQSD1k8DO1gIVyKhw"
                   target="_blank"
@@ -79,7 +79,7 @@ function Footer() {
                   />
                 </a>
               </li>
-              <li>
+              <li style={{ paddingTop: "10px" }}>
                 <a
                   href="https://www.linkedin.com/school/acespvg/"
                   target="_blank"
