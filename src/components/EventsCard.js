@@ -73,6 +73,7 @@ function EventsCard({
           <div className="Events_des">
             <p>{description}</p>
           </div>
+          
         </div>
         <div className="author">
           <div className="author_img"></div>
