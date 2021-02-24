@@ -19,7 +19,7 @@ function EventsCard({
           <Carousel.Item>
             <div style={{ width: "40vw", height: "50vh" }}>
               <img
-                className="d-block  carousel-img"
+                className=" carousel-img"
                 src={imageLink1}
                 alt="First slide"
               />
@@ -32,7 +32,7 @@ function EventsCard({
           <Carousel.Item>
             <div style={{ width: "40vw", height: "50vh" }}>
               <img
-                className="d-block "
+               className=" carousel-img"
                 src={imageLink2}
                 alt="Third slide"
               />
@@ -45,7 +45,7 @@ function EventsCard({
           <Carousel.Item>
             <div style={{ width: "40vw", height: "50vh" }}>
               <img
-                className="d-block "
+                className=" carousel-img"
                 src={imageLink3}
                 alt="Third slide"
               />
