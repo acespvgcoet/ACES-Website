@@ -44,7 +44,7 @@
   border-radius: 75px;
 } */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 900px) {
   .events-header {
     flex-direction: column;
     text-align: center;

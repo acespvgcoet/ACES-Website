@@ -44,6 +44,32 @@ function EventsPage() {
             
             />
           ))}
+           {events.map((evt) => (
+            <EventsCard
+            imageLink1 = {evt.data.imageLink1}
+            imageLink2 = {evt.data.imageLink2}
+            imageLink3 = {evt.data.imageLink3}
+            topic = {evt.data.topic}
+            conductedBy = {evt.data.conductedBy}
+            description = {evt.data.description}
+            date = {new Date(evt.data.dayAndDate.toDate()).toDateString()}
+            AuthorImageUrl = {evt.data.AuthorImageUrl}
+            
+            />
+          ))}
+           {events.map((evt) => (
+            <EventsCard
+            imageLink1 = {evt.data.imageLink1}
+            imageLink2 = {evt.data.imageLink2}
+            imageLink3 = {evt.data.imageLink3}
+            topic = {evt.data.topic}
+            conductedBy = {evt.data.conductedBy}
+            description = {evt.data.description}
+            date = {new Date(evt.data.dayAndDate.toDate()).toDateString()}
+            AuthorImageUrl = {evt.data.AuthorImageUrl}
+            
+            />
+          ))}
         </div>
       </section>
     </div>
