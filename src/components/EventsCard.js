@@ -19,40 +19,40 @@ function EventsCard({
           <Carousel.Item>
             <div style={{ width: "40vw", height: "50vh" }}>
               <img
-                className="d-block w-100 carousel-img"
+                className="d-block  carousel-img"
                 src={imageLink1}
                 alt="First slide"
               />
             </div>
             <Carousel.Caption>
-              <h3>First slide label</h3>
-              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+              <h3 className="Caro-Cap">First slide label</h3>
+              <p  className="Caro-Cap">Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <div style={{ width: "40vw", height: "50vh" }}>
               <img
-                className="d-block w-100"
+                className="d-block "
                 src={imageLink2}
                 alt="Third slide"
               />
             </div>
             <Carousel.Caption>
-              <h3>Second slide label</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <h3 className="Caro-Cap">Second slide label</h3>
+              <p className="Caro-Cap">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
             <div style={{ width: "40vw", height: "50vh" }}>
               <img
-                className="d-block w-100"
+                className="d-block "
                 src={imageLink3}
                 alt="Third slide"
               />
             </div>
             <Carousel.Caption>
-              <h3>Third slide label</h3>
-              <p>
+              <h3 className="Caro-Cap">Third slide label</h3>
+              <p className="Caro-Cap">
                 Praesent commodo cursus magna, vel scelerisque nisl consectetur.
               </p>
             </Carousel.Caption>
