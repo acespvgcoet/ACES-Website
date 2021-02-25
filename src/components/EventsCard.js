@@ -11,9 +11,12 @@ function EventsCard({
   imageLink1,
   imageLink2,
   imageLink3,
+  link
 }) {
+ 
   return (
-    <div className="Events_main">
+    // <a href = {link} target = "_blank">
+       <a href = {link} target = "_blank"className="Events_main">
       <div className="Events_left">
         <Carousel>
           <Carousel.Item>
@@ -80,7 +83,10 @@ function EventsCard({
           <h3>{conductedBy}</h3>
         </div>
       </div>
-    </div>
+    {/* </div> */}
+    </a>
+   
+  
   );
 }
 
