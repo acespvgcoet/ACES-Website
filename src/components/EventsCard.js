@@ -17,7 +17,7 @@ function EventsCard({
       <div className="Events_left">
         <Carousel>
           <Carousel.Item>
-            <div style={{ width: "40vw", height: "50vh" }}>
+            <div style={{ width: "380px", height: "300px" }}>
               <img
                 className=" carousel-img"
                 src={imageLink1}
@@ -30,7 +30,7 @@ function EventsCard({
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <div style={{ width: "40vw", height: "50vh" }}>
+            <div style={{ width: "380px", height: "300px" }}>
               <img
                className=" carousel-img"
                 src={imageLink2}
@@ -43,7 +43,7 @@ function EventsCard({
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <div style={{ width: "40vw", height: "50vh" }}>
+            <div style={{ width: "380px", height: "300px" }}>
               <img
                 className=" carousel-img"
                 src={imageLink3}
