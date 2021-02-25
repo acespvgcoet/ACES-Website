@@ -4,7 +4,10 @@ import EventsPage from './EventsPage'
 function Events() {
   return (
     <div>
-       <EventsPage />
+      
+        <EventsPage />
+      
+       
     </div>
   )
 }

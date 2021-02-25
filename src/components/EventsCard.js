@@ -11,17 +11,20 @@ function EventsCard({
   imageLink1,
   imageLink2,
   imageLink3,
+  link
 }) {
+ 
   return (
-    <div className="Events_main">
+    // <a href = {link} target = "_blank">
+       <a href = {link} target = "_blank"className="Events_main">
       <div className="Events_left">
         <Carousel>
           <Carousel.Item>
-            <div style={{ width: "40vw", height: "50vh" }}>
+            <div style={{ width: "380px", height: "300px" }}>
               <img
                 className=" carousel-img"
                 src={imageLink1}
-                alt="First slide"
+                alt=""
               />
             </div>
             <Carousel.Caption>
@@ -30,11 +33,11 @@ function EventsCard({
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <div style={{ width: "40vw", height: "50vh" }}>
+            <div style={{ width: "380px", height: "300px" }}>
               <img
                className=" carousel-img"
                 src={imageLink2}
-                alt="Third slide"
+                alt=""
               />
             </div>
             <Carousel.Caption>
@@ -43,11 +46,11 @@ function EventsCard({
             </Carousel.Caption>
           </Carousel.Item>
           <Carousel.Item>
-            <div style={{ width: "40vw", height: "50vh" }}>
+            <div style={{ width: "380px", height: "300px" }}>
               <img
                 className=" carousel-img"
                 src={imageLink3}
-                alt="Third slide"
+                alt=""
               />
             </div>
             <Carousel.Caption>
@@ -80,7 +83,10 @@ function EventsCard({
           <h3>{conductedBy}</h3>
         </div>
       </div>
-    </div>
+    {/* </div> */}
+    </a>
+   
+  
   );
 }
 
