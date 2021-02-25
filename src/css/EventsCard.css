@@ -13,7 +13,7 @@ a, a:hover, a:focus, a:active {
   
 }
 .Caro-Cap{
-  display: block;
+  display: none;
 }
 
  
@@ -125,11 +125,11 @@ a, a:hover, a:focus, a:active {
   }
   .carousel-control-prev,
   .carousel-control-next {
-    top:10px !important;
-    bottom:none !important;
+    top:100px!important;
+    bottom:150px !important;
   }
   .Caro-Cap{
-    display: block;
+    display: none;
   }
   .Events_main {
     display: flex;

@@ -24,7 +24,7 @@ function EventsCard({
               <img
                 className=" carousel-img"
                 src={imageLink1}
-                alt="First slide"
+                alt=""
               />
             </div>
             <Carousel.Caption>
@@ -37,7 +37,7 @@ function EventsCard({
               <img
                className=" carousel-img"
                 src={imageLink2}
-                alt="Third slide"
+                alt=""
               />
             </div>
             <Carousel.Caption>
@@ -50,7 +50,7 @@ function EventsCard({
               <img
                 className=" carousel-img"
                 src={imageLink3}
-                alt="Third slide"
+                alt=""
               />
             </div>
             <Carousel.Caption>
