@@ -15,9 +15,9 @@ function Header() {
       <NavLink className="headerLink" to="/blogs">
         <p className = "headerNav">BLOGS</p>
       </NavLink>
-      <NavLink className="headerLink" to="/events">
+      {/* <NavLink className="headerLink" to="/events">
         <p className = "headerNav">EVENTS</p>
-      </NavLink>
+      </NavLink> */}
       <NavLink className="headerLink" to="/contact">
         <p className = "headerNav">CONTACT</p>
       </NavLink>
