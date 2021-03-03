@@ -18,7 +18,7 @@ function BlogsCardSmall({title, topic, ImageUrl, author, des, AuthorImageUrl,lin
           {/* <div className="author_img_smallcard">
             <Avatar src={AuthorImageUrl} className="avImg"/>
           </div> */}
-          <h5>{author}</h5>
+          <h5>By :- {author}</h5>
         </div>
       </div>
     </div>
