@@ -8,7 +8,7 @@ import db from "./firebase";
 function Blogs() {
   const [blogs,setBlogs] = useState([]);
   useEffect(()=>{
-      db.collection("blogs").onSnapshot((snapshot)=>{
+      db.collection("blogs").where("isHosted","==",true).onSnapshot((snapshot)=>{
         setBlogs(
           snapshot.docs.map((doc) => ({
             id: doc.id,
