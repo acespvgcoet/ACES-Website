@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "../css/Blogs.css";
-import BlogsCardLarge from "./BlogsCardLarge";
+// import BlogsCardLarge from "./BlogsCardLarge";
 import BlogsCardSmall from "./BlogsCardSmall";
 import BlogIllustration from "../assets/images/blog-illustration.png";
+import db from "./firebase";
 
 function Blogs() {
+  const [blogs,setBlogs] = useState([]);
+  useEffect(()=>{
+      db.collection("blogs").onSnapshot((snapshot)=>{
+        setBlogs(
+          snapshot.docs.map((doc) => ({
+            id: doc.id,
+            data: doc.data(),
+          }))
+        )
+      })
+  },[blogs])
   return (
     <div className="blogs">
       <section className="blogs-header">
@@ -21,22 +33,32 @@ function Blogs() {
         </div>
       </section>
       <section style={{ backgroundColor: "#e9edf0" }}>
-        {/* <div className="blogs_up">
-          <div className="blogcardlarge">
-            <BlogsCardLarge
-              description='The use of the term "technology" has changed significantly over
-          the last 200 years. The use of the term "technology" has changed
-          significantly over The use of the term "technology" has changed
-          significantly over Before the 20th century, the term was The use'
-              title="How Technology is Growing"
-              topic="Technology"
-            ></BlogsCardLarge>
-          </div>
-        </div> */}
         <div className="blogs_down">
           <div className="blogcardsmall">
-            <div className="blog_cards">
-              <BlogsCardSmall
+              {blogs.map((blog)=>(
+                 <div className="blog_cards">
+                 <BlogsCardSmall
+                   author={blog.data.author}
+                   title = {blog.data.title}
+                   topic={blog.data.topic}
+                   ImageUrl={blog.data.ImageUrl}
+                   des={blog.data.description}
+                   AuthorImageUrl={blog.data.AuthorImageUrl}
+                   link = {blog.data.link}
+                 ></BlogsCardSmall>
+               </div>
+              ))}
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
+
+export default Blogs;
+{/* 
+<div className="blog_cards">
+<BlogsCardSmall
                 author="Arya Kulkarni"
                 topic="Sports"
                 des='The use of the term "technology" has changed significantly over the
@@ -172,11 +194,4 @@ function Blogs() {
                 AuthorImageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWjXeHpaZHyFx2UDnOOxyk8mSMadIa1owVsg&usqp=CAU"
               ></BlogsCardSmall>
             </div>
-          </div>
-        </div>
-      </section>
-    </div>
-  );
-}
-
-export default Blogs;
+*/}
