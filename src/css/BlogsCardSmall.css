@@ -43,7 +43,6 @@
 .blog_image img {
   height: 180px;
   width: 100%;
-  object-fit: contain;
 }
 .blog_info h3 {
   margin-top: 10px;
