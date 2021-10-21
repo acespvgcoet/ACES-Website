@@ -10,6 +10,7 @@ import TeamMembers from "./TeamMembers";
 import Header from "./Header";
 import Events from "./Events";
 import Blogs from "./Blogs";
+import Login from "./Login";
 
 function App() {
   return (
@@ -34,6 +35,10 @@ function App() {
           <Route path="/blogs">
             <Header />
             <Blogs />
+          </Route>
+          <Route path="/login">
+            <Header/>
+            <Login />
           </Route>
           <Route path="/">
             <Home />
