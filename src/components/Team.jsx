@@ -47,8 +47,8 @@ function Team() {
   const send = (e) => {
     e.preventDefault();
     console.log(name, cat, imgL, linkedInL);
-    console.log("notification");
-    db.collection("teams").doc("notification").collection("members").add({
+    console.log("eventmanagement");
+    db.collection("teams").doc("eventmanagement").collection("members").add({
       name: name,
       category: cat,
       imgLink: imgL,
@@ -62,14 +62,14 @@ function Team() {
   return (
     <div>
       <Header />
-      {/*
-      Uncomment this to add Member Data Data To firestore
       
-      Name: <input type = "text" value={name} onChange={e => setName(e.target.value)}/><br/>
+      {/* Uncomment this to add Member Data Data To firestore */}
+      
+      {/* Name: <input type = "text" value={name} onChange={e => setName(e.target.value)}/><br/>
         Category: <input type = "text" value={cat} onChange={e => setCat(e.target.value)}/><br/>
         IMGLink: <input type = "text" value={imgL} onChange={e => setImgL(e.target.value)}/><br/>
         LinkedLink : <input type = "text" value={linkedInL} onChange={e => setLinkedInL(e.target.value)}/><br/>
-        <button onClick  = {send}>Send</button><br/>*/}
+        <button onClick  = {send}>Send</button><br/> */}
       <div className="teamheader">
         <div className="teampagetitle">
           <h1>The Team</h1>

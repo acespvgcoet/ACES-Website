@@ -10,7 +10,7 @@ import TeamMembers from "./TeamMembers";
 import Header from "./Header";
 import Events from "./Events";
 import Blogs from "./Blogs";
-
+import Registration from "./Registration"
 function App() {
   return (
     <div className="app">
@@ -34,6 +34,10 @@ function App() {
           <Route path="/blogs">
             <Header />
             <Blogs />
+          </Route>
+          <Route path="/registration">
+            <Header />
+            <Registration EventName="Blender Workshop" description="kjasdkasnbdmSVdjsbdnhsdhsvmd NBbkZJFxmNZxnn  zchzcn  ccZMcbn"/>
           </Route>
           <Route path="/">
             <Home />
