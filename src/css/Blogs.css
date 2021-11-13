@@ -1,5 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+
 .blogs {
   font-family: "Roboto", sans-serif;
+  margin-bottom: 150px;
+  margin-top: 60px;
+  overflow-x: hidden;
+}
+.blogs_page_heading_image {
+  width: 450px;
 }
 
 .blogs-header {
@@ -8,6 +16,10 @@
   justify-content: space-around;
   align-items: center;
   margin: 0 10px 10px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  margin-bottom: 120px;
+  margin-top: 50px;
 }
 
 .blogs-header > div > h1 {
@@ -28,6 +40,7 @@
   height: 440px;
   display: flex;
   align-items: center;
+  /* background-color: rgb(47, 53, 53); */
 }
 
 .blogs_down {
@@ -35,6 +48,8 @@
   justify-content: center;
   display: flex;
   align-items: center;
+  /* background-color: rgb(156, 180, 180); */
+  width: 100vw;
 }
 
 .blogcardsmall {
@@ -42,18 +57,27 @@
   overflow: hidden;
   flex-wrap: wrap;
   align-items: center;
-  width: 85vw;
+  width: 100vw;
+  margin-right: 90px;
+  margin-left: 90px;
   justify-content: center;
 }
 
 .blog_cards {
-  margin-right: 20px;
-  margin-left: 20px;
+  /* margin-right: 20px; */
+  /* margin-left: 20px; */
 }
 
+@media screen and (max-width: 600px) {
+  .blogcardsmall {
+    margin-right: 0px;
+    margin-left: 0px;
+  }
+}
 @media screen and (max-width: 800px) {
   .blogs-header {
     flex-direction: column;
+    flex-direction: column-reverse;
   }
 }
 
@@ -68,5 +92,12 @@
   .blogs_up {
     height: 550px;
     display: flex;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .blogs_page_heading_image {
+    width: 350px;
+    margin-top: 10px;
   }
 }
