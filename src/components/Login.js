@@ -2,9 +2,110 @@ import { useState, useEffect } from 'react'
 import '../css/Login.css'
 import login from '../assets/images/login.png';
 import { Link } from 'react-router-dom';
-
+import { useStateValue } from './StateProvider';
+import { useFormik } from 'formik';
+import * as Yup from 'yup';
+import db, { auth } from './firebase';
+import { actionTypes } from './reducer';
 function Login() {
-    const initial = {
+    const [{ user, alertMessage }, dispatch] = useStateValue();
+    const formik = useFormik({
+
+        initialValues: {
+            email: '',
+            password: '',
+        },
+
+        validationSchema: Yup.object({
+
+
+
+            email: Yup.string().email('Invalid email address').required('Required'),
+            password: Yup.string()
+                .min(8, 'Must be 8 characters or more')
+
+                .required('Required'),
+
+
+        }),
+
+        onSubmit: values => {
+            auth.signInWithEmailAndPassword(values.email, values.password).then((userCredential) => {
+                // Signed in
+                dispatch({
+                    type: actionTypes.SET_ALERTMESSAGE,
+                    alertMessage: null,
+                })
+                if (userCredential.user.emailVerified) {
+                    console.log(userCredential.user);
+                    dispatch({
+                        type: actionTypes.SET_USER,
+                        user: userCredential.user,
+                    });
+                }
+
+                else {
+                    dispatch({
+                        type: actionTypes.SET_USER,
+                        user: null,
+                    });
+                    auth.signOut()
+                    dispatch({
+                        type: actionTypes.SET_ALERTMESSAGE,
+                        alertMessage: "Email not Verified",
+                    })
+                    // alert("Email not Verified")
+
+
+                }
+                // ...
+            })
+                .catch((error) => {
+                    console.log(error);
+                    dispatch({
+                        type: actionTypes.SET_ALERTMESSAGE,
+                        alertMessage: error.message,
+                    })
+                });
+
+        },
+
+    });
+    return (
+        <div className='login-container'>
+            <div className='login-content-left'>
+                <img src={login} className="login-img" alt="login" />
+            </div>
+            <div className="login-content-right">
+                <form className="login" onSubmit={formik.handleSubmit}>
+                    <h1>Login</h1>
+                    <div className="login-inputs">
+                        <label htmlFor="email" className="login-label">Email</label>
+                        <input type="email" name="email" id="email" className="login-input" placeholder="Enter Email"  onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.email}/>
+                        {formik.touched.email && formik.errors.email ? (<p>{formik.errors.email}</p>) : null}
+                    </div>
+                    <div className="login-inputs">
+                        <label htmlFor="password" className="login-label">Password</label>
+                        <input type="password" name="password" id="password" className="login-input" placeholder="Enter Password" onChange={formik.handleChange} onBlur={formik.handleBlur} value={formik.values.password}/>
+                        {formik.touched.password && formik.errors.password ? (<p>{formik.errors.password}</p>) : null}
+                    </div>
+                    <button className="login-input-btn" type="submit">Login</button>
+                    <span className="login-input-login">
+                        {alertMessage}
+                    </span>
+                    <span className="login-input-login">
+                        Don't have account?  <Link to = "signup">Create One</Link>
+                    </span>
+                </form>
+            </div>
+        </div>
+    )
+}
+export default Login
+
+
+/*
+const initial = {
         email: "",
         password: "",
     };
@@ -42,32 +143,5 @@ function Login() {
         }
         return errors;
     };
-    return (
-        <div className='login-container'>
-            {Object.keys(formErrors).length === 0 && isSubmit ? window.open("Home","_self"): console.log("No")}
-            <div className='login-content-left'>
-                <img src={login} className="login-img" alt="login" />
-            </div>
-            <div className="login-content-right">
-                <form className="login" onSubmit={handleSubmit}>
-                    <h1>Login</h1>
-                    <div className="login-inputs">
-                        <label htmlFor="email" className="login-label">Email</label>
-                        <input type="email" name="email" id="email" className="login-input" placeholder="Enter Email" value={formValues.email} onChange={handleChange} />
-                        { <p>{formErrors.email}</p> }
-                    </div>
-                    <div className="login-inputs">
-                        <label htmlFor="password" className="login-label">Password</label>
-                        <input type="password" name="password" id="password" className="login-input" placeholder="Enter Password" value={formValues.password} onChange={handleChange} />
-                        <p>{formErrors.password}</p>
-                    </div>
-                    <button className="login-input-btn" type="submit">Login</button>
-                    <span className="login-input-login">
-                        Don't have account?  <Link to = "signup">Create One</Link>
-                    </span>
-                </form>
-            </div>
-        </div>
-    )
-}
-export default Login
+
+*/
