@@ -11,6 +11,7 @@ import Header from "./Header";
 import Events from "./Events";
 import Blogs from "./Blogs";
 import Registration from "./Registration"
+import Login from "./Login";
 function App() {
   return (
     <div className="app">
@@ -35,9 +36,13 @@ function App() {
             <Header />
             <Blogs />
           </Route>
-          <Route path="/registration">
+          <Route path="/signup">
             <Header />
-            <Registration EventName="Blender Workshop" description="kjasdkasnbdmSVdjsbdnhsdhsvmd NBbkZJFxmNZxnn  zchzcn  ccZMcbn"/>
+            <Registration />
+          </Route>
+          <Route path="/signin">
+            <Header />
+            <Login />
           </Route>
           <Route path="/">
             <Home />
