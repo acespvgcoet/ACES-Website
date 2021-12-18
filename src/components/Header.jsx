@@ -2,47 +2,73 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "../css/Header.css";
 import ACES from "../assets/images/aces.png";
+import { useStateValue } from "./StateProvider";
+import { Avatar, Tooltip } from "@material-ui/core";
+import { actionTypes } from "./reducer";
 function Header() {
+  const [{ user }, dispatch] = useStateValue();
   return (
     <div className="header">
-      
-    <NavLink className="home"  to="/">
-      <img src={ACES} className="aceslogo" alt="ACES-logo" />
-    </NavLink>
 
-    <label for="hamburger">&#9776;</label>
-    <input type="checkbox" id="hamburger"/>
-    
-    <div className="NavMenu">
+      <NavLink className="home" to="/">
+        <Tooltip title = "Home">
+          <img src={ACES} className="aceslogo" alt="ACES-logo" />
+        </Tooltip>
+        
+      </NavLink>
 
-      <NavLink activeClassName="active" className="headerLink" to="/teams">
-        <button className="headerNav">TEAM</button>
-      </NavLink>
-      <NavLink activeClassName="active" className="headerLink" to="/blogs">
-        <button className="headerNav">BLOGS</button>
-      </NavLink>
-      <NavLink activeClassName="active" className="headerLink" to="/events">
-        <button className = "headerNav">EVENTS</button>
-      </NavLink> 
-      <NavLink activeClassName="active" className="headerLink" to="/contact">
-        <button className="headerNav">CONTACT</button>
-      </NavLink>
-      <div  className="headerButtons">  
-        <NavLink activeClassName="active" to = "/signin">
-          <button className="secondary-button ">Login</button>
+      <label for="hamburger">&#9776;</label>
+      <input type="checkbox" id="hamburger" />
+
+      <div className="NavMenu">
+
+        <NavLink activeClassName="active" className="headerLink" to="/teams">
+          <button className="headerNav">TEAM</button>
         </NavLink>
-        <NavLink activeClassName="active" to='/signup'>
-          <button className="primary-button">Register</button>
+        <NavLink activeClassName="active" className="headerLink" to="/blogs">
+          <button className="headerNav">BLOGS</button>
         </NavLink>
+        <NavLink activeClassName="active" className="headerLink" to="/events">
+          <button className="headerNav">EVENTS</button>
+        </NavLink>
+        <NavLink activeClassName="active" className="headerLink" to="/contact">
+          <button className="headerNav">CONTACT</button>
+        </NavLink>
+        {user ? (
+          <div className="headerButtons">
+            <NavLink activeClassName="active" to="/dashboard">
+              <button className="primary-button ">Dashboard</button>
+              
+            </NavLink>
+            <div>
+              <Tooltip title = "Logout">
+              <Avatar className="userAvatar" onClick = {()=>{dispatch({
+                 type: actionTypes.SET_USER,
+                 user: null,
+              })}}>{user.displayName[0]}</Avatar>
+              </Tooltip>
+            
+            </div>
+            
+          
+          </div>
+        ) : (<div className="headerButtons">
+          <NavLink activeClassName="active" to="/signin">
+            <button className="secondary-button ">Login</button>
+          </NavLink>
+          <NavLink activeClassName="active" to='/signup'>
+            <button className="primary-button">Register</button>
+          </NavLink>
+        </div>)}
+
+
+
+
       </div>
-      
 
-      
+
+
     </div>
-    
-
-    
-  </div>
   );
 }
 

@@ -117,6 +117,8 @@ text-decoration: none;
 .headerButtons {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
+  padding-right: 5px;
 }
 
 .primary-button {
@@ -177,4 +179,8 @@ text-decoration: none;
   font-size: 14.5px;
   letter-spacing: 0.7px;
   line-height: 20px;
+}
+.userAvatar{
+  background-color: #b516e6 !important;
+  cursor: pointer;
 }

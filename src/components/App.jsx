@@ -44,6 +44,10 @@ function App() {
             <Header />
             <Login />
           </Route>
+          <Route path="/dashboard">
+            <Header />
+            This is dashboard
+          </Route>
           <Route path="/">
             <Home />
           </Route>

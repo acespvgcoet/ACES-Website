@@ -1,13 +1,14 @@
 import { useState, useEffect } from 'react'
 import '../css/Login.css'
 import login from '../assets/images/login.png';
-import { Link } from 'react-router-dom';
+import { Link , useHistory} from 'react-router-dom';
 import { useStateValue } from './StateProvider';
 import { useFormik } from 'formik';
 import * as Yup from 'yup';
 import db, { auth } from './firebase';
 import { actionTypes } from './reducer';
 function Login() {
+    const history = useHistory();
     const [{ user, alertMessage }, dispatch] = useStateValue();
     const formik = useFormik({
 
@@ -42,6 +43,8 @@ function Login() {
                         type: actionTypes.SET_USER,
                         user: userCredential.user,
                     });
+                    history.push('/');
+                    
                 }
 
                 else {
