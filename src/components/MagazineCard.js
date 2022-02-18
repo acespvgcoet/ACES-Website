@@ -8,7 +8,7 @@ export default function MagazineCard(){
         <div className="root">
 
             <div className="card">
-            <img src="src\assets\images\Magazene1.png" alt="Avatar"/>
+            <img src="src\assets\images\Magazene1.png" alt="Magazene Image"/>
             <div className="container">
                 <h4><b>Magazine 1</b></h4> 
                 <p>lorem epsum 10</p> 

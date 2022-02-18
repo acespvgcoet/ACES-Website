@@ -5,8 +5,7 @@ export default function Magazine(){
 
     return (
     <div>
-        <MagazineCard/>
-        <MagazineCard/>
+        
         <MagazineCard/>
     </div>
     )
