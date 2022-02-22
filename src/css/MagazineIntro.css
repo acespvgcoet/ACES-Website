@@ -1,0 +1,317 @@
+.Mainlogo{
+    padding-left: 60px;
+ }  
+ #aceslogo{
+    height: 12%;
+    width: 12%;
+    transition: transform 1s;
+    animation-name: logo;
+    animation-duration: 2s;
+} 
+ @keyframes logo {
+    from {
+        transform : translateY(50px);
+        opacity   : 0;
+    }
+    to {
+        transform : translateY(0);
+        opacity   : 1;
+    }
+} 
+#aceslogo:hover{
+    transform: scale(1.2);
+}
+
+
+.MainHeading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+@keyframes heading {
+    from {
+        transform : scale(0.5);
+        opacity   : 0;
+    }
+    to {
+        transform : scale(1);
+        opacity   : 1;
+    }
+}
+.left-side{
+    flex-basis: 55%;
+    position: relative;
+    margin-left: 80px;
+    animation-name: heading;
+    animation-duration: 1s;
+    margin-bottom: 90px;
+}
+#BookHeading{
+    font-size: 54px;
+}
+
+#SubHeading{
+    font-size: 30px;
+    color: #707070;
+    font-weight: 100;
+    margin: 20px 0 10px;
+}
+#downloadbutton{
+    width: 170px;
+    border: none;
+    padding: 12px 10px;
+    outline: none;
+    color: #fff;
+    background: linear-gradient(to right,#568a9e,#53ceec,#dae2d3);
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+#downloadbutton:hover{
+    transform: scale(1.05);
+    background: linear-gradient(to right,#497c91,#56b4cc,#e4f5d9);
+} 
+
+.left-side::after{
+    content: '';
+    width: 12px;
+    height: 68%;
+    background: linear-gradient(#DEF2CF,#48B2CD,#335d6d); 
+    position: absolute;
+    left: 200px;
+    top: 8px;
+    border: none;
+    transition: transform 0.8s;
+    animation-name: line;
+    animation-duration: 1s;    
+}
+@keyframes line{
+    from {
+        transform : translateX(-500px);
+        opacity   : 0;
+    }
+    to {
+        transform : translateX(0);
+        opacity   : 1;
+    }
+}
+
+.right-side{
+    position: relative;
+    flex-basis: 35%;
+    display: flex;
+    align-items: center;
+    margin-right: 90px;
+}
+#bookcover{
+    width: 80%;
+    animation-name: book;
+    animation-duration: 1s;
+    transition: transform 1s;
+}
+@keyframes book {
+    from {
+        transform : scale(0.5);
+        opacity   : 0;
+    }
+
+    to {
+        transform : scale(1);
+        opacity   : 1;
+    }
+}
+#bookcover:hover{
+    transform: scale(1.05);
+}
+.colorbox{
+    position: absolute;
+    right: 0;
+    top: -5%;
+    z-index: -1;
+    background: linear-gradient(to right,#335d6d,#48B2CD,#DEF2CF); 
+    border-radius: 20px 0 0 20px;
+    height: 102%;
+    width: 101%;
+    transform: translateX(90px);
+    box-shadow: 8px -8px 16px #8f8f8f,
+                -8px 8px 16px #ffffff;
+    outline: none;
+}
+@media only screen and (max-width:700px){
+    .MainHeading{
+        flex-direction: column-reverse;
+        margin: 40px 0px;
+    }
+    .right-side{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    #bookcover{
+        margin-left: 30%;
+        width: 70%;
+        /* transform: translateX(100px); */
+    }
+    .colorbox{
+        transform: translateX(160px);
+        /* margin: auto; */
+        width: 105%;
+    }
+    .left-side{
+        flex-basis: 100%;
+        margin-right: 10%;
+    }
+    #BookHeading{
+        font-size: 190%;
+        margin:auto;
+    }
+    #SubHeading{
+        font-size: 120%;
+        margin:auto;
+        margin-top: 1rem;
+    }
+    #downloadbutton{
+        margin:auto;
+        width: 140px;
+        padding: 8px 8px;
+    }
+    .left-side::after{
+        margin-left: -260px;
+        height: 63%;
+    }
+    #aceslogo{
+        width: 29%;
+        height: 29%;
+    }
+}
+
+@media only screen and (min-width:701px) and (max-width:740px){
+    #bookcover{
+        margin-left: 17%;
+        width: 110%;
+    }
+    .left-side{
+        flex-basis: 100%;
+    }
+    #BookHeading{
+        font-size: 200%;
+        margin-right: 10%;
+    }
+    #SubHeading{
+        font-size: 100%;
+        margin-right:10%;
+    }
+    #downloadbutton{
+        margin-right: 12%;
+        width: 130px;
+        padding: 5px 5px;
+    }
+    .left-side::after{
+        margin-left: -80%;
+        height: 57%;
+    }
+    .MainHeading{
+        /* flex-direction: column-reverse; */
+        margin: 40px 0px;
+    }
+    .right-side{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    #aceslogo{
+        width: 20%;
+        height: 20%;
+    }
+}
+@media only screen and (min-width:741px)and (max-width:900px){
+    #bookcover{
+        margin-left: 10%;
+        width: 110%;
+    }
+    .left-side{
+        flex-basis: 100%;
+    }
+    #BookHeading{
+        font-size: 240%;
+        margin-right: 10%;
+    }
+    #SubHeading{
+        font-size: 135%;
+        margin-right:10%;
+    }
+    #downloadbutton{
+        margin-right: 11%;
+        width: 130px;
+        padding: 2px 2px;
+    }
+    .colorbox{
+        transform: translateX(100px);
+        width: 100%;
+
+    }
+    .right-side{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    .left-side::after{
+        margin-left: -72%;
+        height: 63%;
+    }
+    #aceslogo{
+        width: 20%;
+        height: 20%;
+    }
+}
+/* @media only screen and (min-width = 901px) {
+    #bookcover{
+        margin-left: 10%;
+        width: 110%;
+    }
+    .left-side{
+        flex-basis: 100%;
+    }
+    #BookHeading{
+        font-size: 280%;
+        margin-right: 10%;
+    }
+    #SubHeading{
+        font-size: 150%;
+        margin-right:10%;
+    }
+    #downloadbutton{
+        margin-right: 11%;
+        width: 130px;
+        padding: 2px 2px;
+    }
+    .colorbox{
+        transform: translateX(100px);
+        width: 100%;
+
+    }
+    .right-side{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    .left-side::after{
+        margin-left: 100%;
+        height: 63%;
+    }
+    #aceslogo{
+        width: 20%;
+        height: 20%;
+    }
+} */
+   
+
+@media only screen and (min-width:905px)and (max-width:1100px){
+    .left-side::after{
+        margin-left: -42%;
+        height: 63%;
+    }
+}
+@media only screen and (min-width:1105px)and (max-width:1400px){
+    .left-side::after{
+        margin-left: -22%;
+        height: 63%;
+    }
+}

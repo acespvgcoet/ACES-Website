@@ -11,6 +11,7 @@ import Header from "./Header";
 import Events from "./Events";
 import Blogs from "./Blogs";
 import Registration from "./Registration"
+import Magazine from "./Magazine";
 import Login from "./Login";
 function App() {
   return (
@@ -32,6 +33,12 @@ function App() {
             <Header />
             <Events />
           </Route>
+
+          <Route path="/magazine">
+            <Header />
+            <Magazine />
+          </Route>
+
           <Route path="/blogs">
             <Header />
             <Blogs />
