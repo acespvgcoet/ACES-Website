@@ -34,7 +34,10 @@ function Header() {
         <NavLink activeClassName="active" className="headerLink" to="/contact">
           <button className="headerNav">CONTACT</button>
         </NavLink>
-        {user ? (
+        <NavLink activeClassName="active" className="headerLink" to="/magazine">
+          <button className="headerNav">MAGAZINE</button>
+        </NavLink>
+        {/* {user ? (
           <div className="headerButtons">
             <NavLink activeClassName="active" to="/dashboard">
               <button className="primary-button ">Dashboard</button>
@@ -59,7 +62,7 @@ function Header() {
           <NavLink activeClassName="active" to='/signup'>
             <button className="primary-button">Register</button>
           </NavLink>
-        </div>)}
+        </div>)} */}
 
 
 
