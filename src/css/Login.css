@@ -1,21 +1,20 @@
-.registration-container {
+.login-container {
     margin: 100px auto;
-    width: 60%;
+    width: 1000px;
     box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
     position: relative;
     border-radius: 10px;
-    height: 950px;
+    height: 600px;
     display: grid;
-    background:rgb(87, 84, 84);
     grid-template-columns: 1fr 1fr;
   }
   
-  .registration-content-left {
+  .login-content-left {
     border-radius: 10px 0 0 10px;
     position: relative;
   }
   
-  .registration-img {
+  .login-img {
     width: 80%;
     height: 80%;
     position: absolute;
@@ -24,13 +23,13 @@
     transform: translate(-50%, -50%);
   }
   
-  /* .registration-content-right {
+  .login-content-right {
     border-radius: 0 10px 10px 0;
     position: relative;
     background:gray;
-  } */
+  }
   
-  .registration {
+  .login {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -43,7 +42,7 @@
     align-items: center;
   }
   
-  .registration h1 {
+  .login h1 {
     font-size: 2rem;
     text-align: center;
     width: 80%;
@@ -51,25 +50,25 @@
     color: #fff;
   }
   
-  .registration-inputs {
+  .login-inputs {
     margin-bottom: 0.5rem;
     width: 80%;
   }
   
-  .registration-inputs p {
+  .login-inputs p {
     font-size: 0.8rem;
     margin-top: 0.5rem;
     color: #f00e0e;
   }
   
-  .registration-label {
+  .login-label {
     display: inline-block;
     font-size: 0.8rem;
     margin-bottom: 6px;
     color: #fff;
   }
   
-  .registration-input {
+  .login-input {
     display: block;
     padding-left: 10px;
     outline: none;
@@ -79,12 +78,12 @@
     border: none;
   }
   
-  .registration-input::placeholder {
+  .login-input::placeholder {
     color: #595959;
     font-size: 12px;
   }
   
-  .registration-input-btn {
+  .login-input-btn {
     width: 80%;
     height: 50px;
     margin-top: 10px;
@@ -100,7 +99,7 @@
     font-size: 1rem;
   }
   
-  .registration-input-btn:hover {
+  .login-input-btn:hover {
     cursor: pointer;
     background: linear-gradient(
       90deg,
@@ -110,7 +109,7 @@
     transition: all 0.4s ease-out;
   }
   
-  .registration-input-login {
+  .login-input-login {
     font-size: 0.8rem;
     margin-top: 10px;
     color: #fff;
@@ -118,14 +117,14 @@
     text-align: center;
   }
   
-  .registration-input-login a {
+  .login-input-login a {
     text-decoration: none;
     color: #27cdff;
     font-weight: 600;
   }
   
   @media screen and (max-width: 800px) {
-    .registration-container,.registration-inputs, input[type=submit] {
+    .login-container,.login-inputs, input[type=submit] {
       width: 100%;
       margin-top: 0;
     }

@@ -6,17 +6,19 @@ import BlogIllustration from "../assets/images/blog-illustration.png";
 import db from "./firebase";
 
 function Blogs() {
-  const [blogs,setBlogs] = useState([]);
-  useEffect(()=>{
-      db.collection("blogs").where("isHosted","==",true).onSnapshot((snapshot)=>{
+  const [blogs, setBlogs] = useState([]);
+  useEffect(() => {
+    db.collection("blogs")
+      .where("isHosted", "==", true)
+      .onSnapshot((snapshot) => {
         setBlogs(
           snapshot.docs.map((doc) => ({
             id: doc.id,
             data: doc.data(),
           }))
-        )
-      })
-  },[blogs])
+        );
+      });
+  }, [blogs]);
   return (
     <div className="blogs">
       <section className="blogs-header">
@@ -26,28 +28,29 @@ function Blogs() {
         </div>
         <div style={{ textAlign: "center" }}>
           <img
-            style={{ width: "80%" }}
+            // style={{ width: "80%" }}
+            className="blogs_page_heading_image"
             src={BlogIllustration}
             alt="blog-illustration"
           />
         </div>
       </section>
-      <section style={{ backgroundColor: "#e9edf0" }}>
+      <section style={{ backgroundColor: "#FFFF" }}>
         <div className="blogs_down">
           <div className="blogcardsmall">
-              {blogs.map((blog)=>(
-                 <div className="blog_cards">
-                 <BlogsCardSmall
-                   author={blog.data.author}
-                   title = {blog.data.title}
-                   topic={blog.data.topic}
-                   ImageUrl={blog.data.ImageUrl}
-                   des={blog.data.description}
-                   AuthorImageUrl={blog.data.AuthorImageUrl}
-                   link = {blog.data.link}
-                 ></BlogsCardSmall>
-               </div>
-              ))}
+            {blogs.map((blog) => (
+              <div className="blog_cards">
+                <BlogsCardSmall
+                  author={blog.data.author}
+                  title={blog.data.title}
+                  topic={blog.data.topic}
+                  ImageUrl={blog.data.ImageUrl}
+                  des={blog.data.description}
+                  AuthorImageUrl={blog.data.AuthorImageUrl}
+                  link={blog.data.link}
+                ></BlogsCardSmall>
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -56,7 +59,8 @@ function Blogs() {
 }
 
 export default Blogs;
-{/* 
+{
+  /* 
 <div className="blog_cards">
 <BlogsCardSmall
                 author="Arya Kulkarni"
@@ -194,4 +198,5 @@ export default Blogs;
                 AuthorImageUrl="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWjXeHpaZHyFx2UDnOOxyk8mSMadIa1owVsg&usqp=CAU"
               ></BlogsCardSmall>
             </div>
-*/}
+*/
+}

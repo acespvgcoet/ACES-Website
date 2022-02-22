@@ -14,7 +14,7 @@ function AppMiddle() {
         </div>
         <div style={{ display: "flex", alignItems: "center" }}>
           <PhoneIcon style={{ fontSize: 40, color: "green" }}></PhoneIcon>
-          <h3 style={{ marginLeft: 10 }}>+91 9049600422</h3>
+          <h3 style={{ marginLeft: 10 }}>+91 8793736637</h3>
         </div>
 
         <div style={{ display: "flex", alignItems: "center" }}>
