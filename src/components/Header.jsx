@@ -21,16 +21,18 @@ function Header() {
       <input type="checkbox" id="hamburger" />
 
       <div className="NavMenu">
-
+        <NavLink activeClassName="active" className="headerLink" to="/" exact>
+          <button className="headerNav">HOME</button>
+        </NavLink>
         <NavLink activeClassName="active" className="headerLink" to="/teams">
           <button className="headerNav">TEAM</button>
         </NavLink>
         <NavLink activeClassName="active" className="headerLink" to="/blogs">
           <button className="headerNav">BLOGS</button>
         </NavLink>
-        <NavLink activeClassName="active" className="headerLink" to="/events">
+        {/* <NavLink activeClassName="active" className="headerLink" to="/events">
           <button className="headerNav">EVENTS</button>
-        </NavLink>
+        </NavLink> */}
         <NavLink activeClassName="active" className="headerLink" to="/contact">
           <button className="headerNav">CONTACT</button>
         </NavLink>
