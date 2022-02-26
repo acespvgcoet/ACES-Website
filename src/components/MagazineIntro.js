@@ -17,9 +17,9 @@ export default function MagazineIntro(){
         // </div>
         // </div>
         <div className="root">
-            <div className="Mainlogo">
+            {/* <div className="Mainlogo">
             <img src={require('../assets/images/aces.png').default} id = 'aceslogo'/>
-            </div>
+            </div> */}
             <div className="MainHeading">
                 <div className="left-side">
                     <h2 id="BookHeading">ACE THE TECH</h2>

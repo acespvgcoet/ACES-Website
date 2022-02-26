@@ -1,4 +1,4 @@
-.Mainlogo{
+/* .Mainlogo{
     padding-left: 60px;
  }  
  #aceslogo{
@@ -20,13 +20,17 @@
 } 
 #aceslogo:hover{
     transform: scale(1.2);
-}
+} */
 
+.root{
+    overflow-x: hidden;
+}
 
 .MainHeading{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: 6%;
 }
 @keyframes heading {
     from {
@@ -182,6 +186,55 @@
     #aceslogo{
         width: 29%;
         height: 29%;
+    }
+}
+
+@media only screen and (max-width:320px){
+    .right-side{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    #bookcover{
+        margin-left: 58%;
+        width: 70%;
+        /* transform: translateX(100px); */
+    }
+    .colorbox{
+        transform: translateX(160px);
+        /* margin: auto; */
+        width: 105%;
+    }
+}
+@media only screen and (max-width:300px){
+    .right-side{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    #bookcover{
+        margin-left: 58%;
+        width: 95%;
+        /* transform: translateX(100px); */
+    }
+    .colorbox{
+        transform: translateX(160px);
+        /* margin: auto; */
+        width: 105%;
+    }
+}
+@media only screen and (min-width:321px) and (max-width:370px){
+    .right-side{
+        flex-basis: 100%;
+        margin-bottom: 50px;
+    }
+    #bookcover{
+        margin-left: 40%;
+        width: 78%;
+        /* transform: translateX(100px); */
+    }
+    .colorbox{
+        transform: translateX(160px);
+        /* margin: auto; */
+        width: 105%;
     }
 }
 
