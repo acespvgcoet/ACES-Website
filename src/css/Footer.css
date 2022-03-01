@@ -58,6 +58,10 @@ ul {
 }
 
 .footer-brand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
   text-align: center;
   padding-top: 20px;
 }

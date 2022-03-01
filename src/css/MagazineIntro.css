@@ -23,7 +23,7 @@
 } */
 
 .root{
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .MainHeading{
@@ -146,6 +146,7 @@
     .MainHeading{
         flex-direction: column-reverse;
         margin: 40px 0px;
+        justify-content: center !important;
     }
     .right-side{
         flex-basis: 100%;
