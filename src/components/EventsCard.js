@@ -45,21 +45,7 @@ function EventsCard({
               <p className="Caro-Cap">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
             </Carousel.Caption>
           </Carousel.Item>
-          <Carousel.Item>
-            <div style={{ width: "380px", height: "300px" }}>
-              <img
-                className=" carousel-img"
-                src={imageLink3}
-                alt=""
-              />
-            </div>
-            <Carousel.Caption>
-              <h3 className="Caro-Cap">Third slide label</h3>
-              <p className="Caro-Cap">
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
-            </Carousel.Caption>
-          </Carousel.Item>
+          
         </Carousel>
       </div>
       <div className="Events_right">
@@ -79,8 +65,8 @@ function EventsCard({
           
         </div>
         <div className="author">
-          <div className="author_img"></div>
-          <h3>{conductedBy}</h3>
+         
+          <h3>By: {conductedBy}</h3>
         </div>
       </div>
     {/* </div> */}

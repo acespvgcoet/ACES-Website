@@ -46,7 +46,7 @@
 
 @media screen and (max-width: 900px) {
   .events-header {
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
   }
   .Events-container h2 {
