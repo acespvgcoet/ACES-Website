@@ -7,7 +7,7 @@ import db,{time} from "./firebase";
 export default function MagazineCard({magazineName,magazineInfo}){
     
     const [id,setId] = useState(v1());
-    
+    const [urls,setUrls] = useState([]);
     const download = () => {
         if (localStorage.getItem("ace-the-tech"))
         {
@@ -27,8 +27,20 @@ export default function MagazineCard({magazineName,magazineInfo}){
                 }
             )
         }
-        window.location.href = "https://firebasestorage.googleapis.com/v0/b/aces-website-9fc34.appspot.com/o/ACES.pdf?alt=media&token=23c96b78-2da5-4072-a960-a52921fabd91"
+        window.location.href = urls[0].data.url;
     }
+    useEffect (()=>{
+        db.collection("magazineurl")
+        .where("isHosted", "==", true)
+        .onSnapshot((snapshot) => {
+          setUrls(
+            snapshot.docs.map((doc) => ({
+              id: doc.id,
+              data: doc.data(),
+            }))
+          );
+        });
+    }, [urls]);
     return(
         <div className="root" >
             <div className="heading">
@@ -43,7 +55,12 @@ export default function MagazineCard({magazineName,magazineInfo}){
                         <div className="container">
                             <div className="heading2"><h2><b>{magazineName}</b></h2> </div>
                             <p>{magazineInfo}</p> 
-                            <button type="button" id="downloadbutton" onClick={download}>Download Now</button>
+                            {urls.length == 1?(
+                                <button type="button" id="downloadbutton" onClick={download}>Download Now</button>
+
+                            ):(
+                                <p>Magazine will be availaible for download soon</p>
+                            )}
                         </div>
                 </div>
             </div>
