@@ -1,18 +1,18 @@
 import React, { useEffect, useState } from "react";
-import { useCookies } from "react-cookie";
+
 import {v1} from 'uuid';
 import "../css/MagazineCard.css";
 import db,{time} from "./firebase";
 
 export default function MagazineCard({magazineName,magazineInfo}){
-    const [cookies, setCookie, removeCookie] = useCookies(['ace-the-tech']);
+    
     const [id,setId] = useState(v1());
-    removeCookie("ace-the-tech")
+    
     const download = () => {
-        if (cookies["ace-the-tech"])
+        if (localStorage.getItem("ace-the-tech"))
         {
             
-            db.collection("magazine").doc(cookies["ace-the-tech"])?.collection("count").add({
+            db.collection("magazine").doc(localStorage.getItem("ace-the-tech"))?.collection("count").add({
                 "time": time, 
             })
         }
@@ -20,7 +20,7 @@ export default function MagazineCard({magazineName,magazineInfo}){
         {
             
             
-            setCookie("ace-the-tech",id)
+            localStorage.setItem("ace-the-tech",id)
             db.collection("magazine").doc(id).set(
                 {
                     "time": time
