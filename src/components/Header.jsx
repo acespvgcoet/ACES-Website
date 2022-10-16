@@ -39,6 +39,9 @@ function Header() {
         <NavLink activeClassName="active" className="headerLink" to="/magazine">
           <button className="headerNav">MAGAZINE</button>
         </NavLink>
+        <NavLink activeClassName="active" className="headerLink" to="/events">
+          <button className="headerNav">EVENTS</button>
+        </NavLink>
         {/* {user ? (
           <div className="headerButtons">
             <NavLink activeClassName="active" to="/dashboard">
